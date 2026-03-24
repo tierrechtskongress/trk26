@@ -1,8 +1,8 @@
 {
-  "title": "Tierrechtskongress Leipzig 2026",
-  "displayTitle": "Tierrechts&shy;kongress Leipzig 2026",
-  "subtitle": "23.-24. Mai 2026 in der Ostwache in Leipzig",
-  "siteName": "Tierrechtskongress Leipzig",
+  "title": "Tierrechtskongress Leipzig 2026 - Leipzig Animal Rights Congress 2026",
+  "displayTitle": "Tierrechts&shy;kongress Leipzig 2026 - Leipzig Animal Rights Congress 2026",
+  "subtitle": "23.-24. Mai 2026 in der Ostwache in Leipzig - 23.-24. May 2026 at the Ostwache in Leipzig",
+  "siteName": "Tierrechtskongress Leipzig - Leipzig Animal Rights Congress",
   "url_mainfill": "/images/hero/header.png",
   "bodyClass": "variant-one",
   "hero": {
@@ -51,33 +51,33 @@
   },
   "congress": {
     "donate": {
-      "title": "Unterstütze uns",
-      "text": "Mit deiner Spende hilfst du dabei, Räume, Technik, Materialien und das Rahmenprogramm für den Kongress zu finanzieren.",
-      "ctaLabel": "Zum Spendenaufruf",
+      "title": "Unterstütze uns - Support us",
+      "text": "Mit deiner Spende hilfst du dabei, Räume, Technik, Materialien und das Rahmenprogramm für den Kongress zu finanzieren.\nYour donation will help to fund the venue, equipment, materials and the supporting programme for the conference.",
+      "ctaLabel": "Zum Spendenaufruf - Call for Donations",
       "href": "https://spenden.twingle.de/transformation-fordern-e-v/tierrechtskongress/tw6983028ce7f5e/page"
     },
     "quickFacts": [
       {
-        "label": "Zeit",
+        "label": "Zeit - Time",
         "value": "23.-24.05.2026 10-19Uhr"
       },
       {
-        "label": "Ort",
+        "label": "Ort - Location",
         "value": "Ostwache, Leipzig"
       },
       {
-        "label": "Eintritt",
-        "value": "kostenlos"
+        "label": "Eintritt - Price",
+        "value": "kostenlos - free"
       },
       {
-        "label": "Vorträge",
+        "label": "Vorträge - Lectures",
         "value": "10"
       }
     ],
     "intro": {
       "paragraphs": [
-        "Am Wochenende vom 23. bis 24. Mai 2026 findet in der Ostwache in Leipzig der Tierrechtskongress Leipzig statt. Organisiert wird der Kongress von einer Gruppe Freiwilliger lokaler und veganer Tierbefreiungsgruppen.\n",
-        "Dabei setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Perspektiven der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierethik, Tierrecht, Tierrettung aus Krisengebieten, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben. Darüber hinaus sind Podiumsdiskussionen zu Aktionsformen wie Kampagnen und zivilem Ungehorsam geplant.\n",
+        "Am Wochenende vom 23. bis 24. Mai 2026 findet in der Ostwache in Leipzig der Tierrechtskongress Leipzig statt. Organisiert wird der Kongress von einer Gruppe Freiwilliger lokaler und veganer Tierbefreiungsgruppen.\n\nThe Leipzig Animal Rights Congress will take place at the Ostwache in Leipzig on the weekend of 23–24 May 2026. The congress is being organised by a group of volunteers from local and vegan animal liberation groups.\n",
+        "Dabei setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Perspektiven der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierethik, Tierrecht, Tierrettung aus Krisengebieten, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben. Darüber hinaus sind Podiumsdiskussionen zu Aktionsformen wie Kampagnen und zivilem Ungehorsam geplant.\n\nNumerous speakers will engage critically with various perspectives on the work for animal liberation and animal rights. There will be talks on animal ethics, animal rights, animal rescue from crisis zones, phasing out the animal industry, anti-speciesist work in an educational context and other fascinating topics. In addition, panel discussions on forms of action such as campaigns and civil disobedience are planned.\n",
         "Neben den Vorträgen wird der Kongress auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent:innen bieten. Ziel des Kongresses ist es, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren.\n"
       ]
     },
