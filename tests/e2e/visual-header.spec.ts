@@ -5,6 +5,7 @@ import {
   expectNoRuntimeErrors,
   getHeaderClip,
   gotoAndWaitForPage,
+  maskVolatileHeaderText,
   localizedPages
 } from "./helpers";
 
@@ -14,6 +15,7 @@ for (const localizedPage of localizedPages) {
       const collector = createPageIssueCollector(page);
 
       await gotoAndWaitForPage(page, localizedPage.path);
+      await maskVolatileHeaderText(page);
 
       const clip = await getHeaderClip(page);
       const image = await page.screenshot({

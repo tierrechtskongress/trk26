@@ -145,3 +145,21 @@ export async function getHeaderClip(page: Page) {
   expect(clip, "Expected the sticky nav and hero header to be present.").not.toBeNull();
   return clip!;
 }
+
+export async function maskVolatileHeaderText(page: Page) {
+  await page.addStyleTag({
+    content: `
+      .hero-copy h1,
+      .hero-info-line .label,
+      .hero-info-line .value,
+      .hero-jumpnav .nav-label,
+      .hero-jumpnav .nav-short,
+      .language-switcher__link {
+        color: transparent !important;
+        text-shadow: none !important;
+        -webkit-text-stroke: 0 transparent !important;
+        text-decoration-color: transparent !important;
+      }
+    `
+  });
+}
