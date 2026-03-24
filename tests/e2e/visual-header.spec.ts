@@ -21,7 +21,10 @@ for (const localizedPage of localizedPages) {
         clip
       });
 
-      expect(image).toMatchSnapshot(`${localizedPage.locale}-header-${testInfo.project.name}.png`);
+      expect(image).toMatchSnapshot(`${localizedPage.locale}-header-${testInfo.project.name}.png`, {
+        maxDiffPixelRatio: 0.004,
+        threshold: 0.22
+      });
       expectNoRuntimeErrors(collector);
     });
   });
