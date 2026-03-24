@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:e2e",
     "clean": "rimraf ${ELEVENTY_OUTPUT_DIR:-output/site}",
     "eleventy:default": "npx eleventy",
     "eleventy:watch": "npx eleventy --watch",
@@ -15,7 +15,9 @@
     "dev": "ELEVENTY_OUTPUT_DIR=output/site npm-run-all clean styles:dev eleventy:default --parallel eleventy:watch serve --print-label",
     "dev:debug": "DEBUG=* npm run dev",
     "build:site": "ELEVENTY_OUTPUT_DIR=output/site run-s clean styles:prod eleventy:default --print-label",
-    "build": "npm run build:site"
+    "build": "npm run build:site",
+    "test:e2e": "playwright test",
+    "test:e2e:update": "playwright test --update-snapshots"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
   "homepage": "https://tierrechtskongress.org/",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "@playwright/test": "^1.58.2",
     "autoprefixer": "^9.8.8",
     "light-server": "2.6.4",
     "postcss": "^8.5.6",

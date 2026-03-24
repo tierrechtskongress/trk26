@@ -72,5 +72,9 @@ src/_site/
 .agents/
 skills-lock.json
 
+# Playwright outputs
+playwright-report/
+test-results/
+
 # deploy script
 deploy.js

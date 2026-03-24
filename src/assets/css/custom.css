@@ -16,9 +16,9 @@
     --content-width: 70rem;
     --reading-width: 44rem;
     --hero-overlay-width: 72rem;
-    --display-font: "Avenir Next", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
-    --ui-font: "Avenir Next", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
-    --body-font: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    --display-font: "Cabin Local", "Cabin", "Avenir Next", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+    --ui-font: "Cabin Local", "Cabin", "Avenir Next", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+    --body-font: "Cabin Local", "Cabin", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
@@ -232,7 +232,6 @@ summary,
     min-height: 2.2rem;
     padding: 0.3rem 0.7rem;
     color: var(--ink);
-    font-family: var(--display-font);
     font-size: 0.74rem;
     font-weight: 800;
     letter-spacing: 0.12em;
@@ -391,7 +390,6 @@ summary,
     display: block;
     margin-bottom: 0.18rem;
     color: var(--ink-muted) !important;
-    font-family: var(--ui-font);
     font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -401,7 +399,6 @@ summary,
 .info-line .value {
     display: block;
     color: var(--ink) !important;
-    font-family: var(--ui-font);
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 1.1;
@@ -1157,14 +1154,10 @@ details[open] summary::after {
 }
 
 @font-face {
-    font-family: "Press Start 2P";
-    src: url("../fonts/press-start-2p.ttf") format("truetype");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "VT323";
-    src: url("../fonts/vt323.ttf") format("truetype");
+    font-family: "Cabin Local";
+    src: url("../fonts/cabin-latin-wght-normal.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 900;
     font-display: swap;
 }
 
@@ -1182,9 +1175,9 @@ body.variant-one {
     --olive-soft: #8dc2ff;
     --line: rgba(17, 17, 17, 0.25);
     --line-strong: rgba(17, 17, 17, 0.55);
-    --display-font: "Trebuchet MS", "Gill Sans", sans-serif;
-    --ui-font: "Trebuchet MS", "Gill Sans", sans-serif;
-    --body-font: "Trebuchet MS", "Gill Sans", sans-serif;
+    --display-font: "Cabin Local", "Cabin", "Trebuchet MS", "Gill Sans", sans-serif;
+    --ui-font: "Cabin Local", "Cabin", "Trebuchet MS", "Gill Sans", sans-serif;
+    --body-font: "Cabin Local", "Cabin", "Trebuchet MS", "Gill Sans", sans-serif;
 }
 
 body.variant-one,

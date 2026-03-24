@@ -1,0 +1,11 @@
+# manual-refresh: 2026-03-25T00:04:30Z (test)
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      all-npm-dependencies:
+        patterns:
+          - "*"
