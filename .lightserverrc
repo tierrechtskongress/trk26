@@ -5,12 +5,10 @@
  "delay": 100,
  "quiet": true,
  "watchexps": [
-    "src/scripts/**/*.js # npm run scripts:dev",
     "src/assets/sass/**/*.scss # npm run styles:dev # reloadcss",
     "output/site/**/*.html",
     "output/site/assets/css/**/*.css # reloadcss",
-    "output/site/assets/js/**/*.js",
-    "output/site/scripts/**/*.js"
+    "output/site/assets/js/**/*.js"
   ],
  "http2": false,
  "open": false

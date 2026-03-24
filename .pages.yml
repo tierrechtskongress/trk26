@@ -8,12 +8,12 @@ media:
   output: /images
 
 content:
-  - name: site
-    label: Site Content
+  - name: site_de
+    label: Site Content (DE)
     type: file
     path: src/index.11tydata.json
     format: json
-    fields:
+    fields: &site_fields
       - name: title
         label: Browser Title
         type: string
@@ -27,6 +27,62 @@ content:
       - name: siteName
         label: Site Name
         type: string
+      - name: hero
+        label: Hero Settings
+        type: object
+        fields:
+          - name: kicker
+            label: Kicker
+            type: string
+          - name: imageAltSuffix
+            label: Hero Image Alt Suffix
+            type: string
+      - name: navigation
+        label: Navigation
+        type: object
+        fields:
+          - name: ariaLabel
+            label: Navigation Aria Label
+            type: string
+          - name: items
+            label: Navigation Items
+            type: object
+            list: true
+            fields:
+              - name: href
+                label: Link Target
+                type: string
+              - name: ariaLabel
+                label: Aria Label
+                type: string
+              - name: icon
+                label: Icon
+                type: string
+              - name: label
+                label: Label
+                type: string
+              - name: shortLabel
+                label: Short Label
+                type: string
+      - name: ui
+        label: Shared UI Labels
+        type: object
+        fields:
+          - name: fallbackImageAlt
+            label: Fallback Image Alt
+            type: string
+          - name: speakerTopicLabel
+            label: Speaker Topic Label
+            type: string
+          - name: emailLabel
+            label: Email Label
+            type: string
+          - name: emailAriaLabel
+            label: Email Aria Label
+            type: string
+          - name: emailHint
+            label: Email Hint
+            type: string
       - name: congress
         label: Page Sections
         type: object
@@ -66,6 +122,24 @@ content:
                 label: Paragraphs
                 type: text
                 list: true
+          - name: overview
+            label: Program Overview
+            type: object
+            fields:
+              - name: title
+                label: Section Title
+                type: string
+              - name: days
+                label: Day Tabs
+                type: object
+                list: true
+                fields:
+                  - name: key
+                    label: Day Key
+                    type: string
+                  - name: label
+                    label: Day Label
+                    type: string
           - name: speakers
             label: Talks
             type: object
@@ -171,6 +245,9 @@ content:
             label: Exclusion Clause
             type: object
             fields:
+              - name: title
+                label: Title
+                type: string
               - name: labelLines
                 label: Label Lines
                 type: string
@@ -190,3 +267,9 @@ content:
                 label: Paragraphs
                 type: text
                 list: true
+  - name: site_en
+    label: Site Content (EN)
+    type: file
+    path: src/en/index.11tydata.json
+    format: json
+    fields: *site_fields

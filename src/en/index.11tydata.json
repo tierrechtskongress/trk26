@@ -1,0 +1,314 @@
+{
+  "title": "Leipzig Animal Rights Congress 2026",
+  "displayTitle": "Leipzig Animal Rights Congress 2026",
+  "subtitle": "23-24 May 2026 at Ostwache in Leipzig",
+  "siteName": "Leipzig Animal Rights Congress",
+  "url_mainfill": "/images/hero/header.png",
+  "bodyClass": "variant-one",
+  "hero": {
+    "kicker": "Option 1 · Poster Brutalism",
+    "imageAltSuffix": "Header image"
+  },
+  "navigation": {
+    "ariaLabel": "Section navigation",
+    "items": [
+      {
+        "href": "#spenden",
+        "ariaLabel": "Donation call",
+        "icon": "coins",
+        "label": "Support",
+        "shortLabel": "Donate"
+      },
+      {
+        "href": "#programm",
+        "ariaLabel": "Talks",
+        "icon": "microphone-alt",
+        "label": "Talks",
+        "shortLabel": "Talks"
+      },
+      {
+        "href": "#rahmenprogramm",
+        "ariaLabel": "On-site section",
+        "icon": "star",
+        "label": "On Site",
+        "shortLabel": "On Site"
+      },
+      {
+        "href": "#fragen",
+        "ariaLabel": "Questions and answers",
+        "icon": "question-circle",
+        "label": "FAQ",
+        "shortLabel": "FAQ"
+      }
+    ]
+  },
+  "ui": {
+    "fallbackImageAlt": "Image",
+    "speakerTopicLabel": "Topic:",
+    "emailLabel": "Email:",
+    "emailAriaLabel": "Email address",
+    "emailHint": "Please assemble the address accordingly before sending an email."
+  },
+  "congress": {
+    "donate": {
+      "title": "Support us",
+      "text": "Your donation will help fund the venue, equipment, materials and on-site offerings for the conference.",
+      "ctaLabel": "Call for Donations",
+      "href": "https://spenden.twingle.de/transformation-fordern-e-v/tierrechtskongress/tw6983028ce7f5e/page"
+    },
+    "quickFacts": [
+      {
+        "label": "Time",
+        "value": "23-24 May 2026, 10am-7pm"
+      },
+      {
+        "label": "Location",
+        "value": "Ostwache, Leipzig"
+      },
+      {
+        "label": "Price",
+        "value": "free"
+      },
+      {
+        "label": "Talks",
+        "value": "10"
+      }
+    ],
+    "intro": {
+      "paragraphs": [
+        "The Leipzig Animal Rights Congress will take place at the Ostwache in Leipzig on the weekend of 23–24 May 2026. The congress is being organised by a group of volunteers from local and vegan animal liberation groups.",
+        "Numerous speakers will engage critically with various perspectives on the work for animal liberation and animal rights. There will be talks on animal ethics, animal rights, animal rescue from crisis zones, phasing out the animal industry, anti-speciesist work in an educational context and other fascinating topics. In addition, panel discussions on forms of action such as campaigns and civil disobedience are planned.",
+        "In addition to the presentations, the conference will also provide opportunities for informal discussion and follow-up talks with the speakers. The aim of the conference is to bring together the animal rights movement and interested individuals, and to discuss common ground and the challenges of activist practice."
+      ]
+    },
+    "overview": {
+      "title": "Talks",
+      "days": [
+        {
+          "key": "samstag",
+          "label": "Saturday"
+        },
+        {
+          "key": "sonntag",
+          "label": "Sunday"
+        }
+      ]
+    },
+    "speakers": [
+      {
+        "day": "samstag",
+        "badge": "Opening",
+        "image": "/images/placedog/speaker-07.jpg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "10:00",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/placedog/speaker-08.jpg",
+        "imageAlt": "Hilal Sezgin",
+        "name": "Hilal Sezgin",
+        "session": "11:30",
+        "topic": "Animal ethics"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/placedog/speaker-09.jpg",
+        "imageAlt": "Marie Kolb and Josephine Götze",
+        "name": "Marie Kolb & Josephine Götze",
+        "session": "13:00",
+        "topic": "Why animal welfare is not enough, a call for animal rights"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/placedog/speaker-10.jpg",
+        "imageAlt": "Rike Schmitz",
+        "name": "Rike Schmitz",
+        "session": "14:30",
+        "topic": "Animal Ethics"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/placedog/speaker-11.jpg",
+        "imageAlt": "Tiphaine Lagarde",
+        "name": "Tiphaine Lagarde",
+        "session": "16:00",
+        "topic": "Organising direct actions against the animal industry / Applying feminist principles when carrying out direct actions and using one’s own body as a political tool"
+      },
+      {
+        "day": "samstag",
+        "badge": "Panel",
+        "image": "/images/placedog/speaker-12.jpg",
+        "imageAlt": "Panel discussion on campaigns",
+        "name": "Panel Discussion",
+        "org": "tba.",
+        "session": "17:30",
+        "topic": "Campaigning"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-01.jpg",
+        "imageAlt": "Notpfote",
+        "name": "Notpfote",
+        "session": "10:00",
+        "topic": "Animal rescue from areas in crisis"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-02.jpg",
+        "imageAlt": "Umweltbildungswerk",
+        "name": "Umwelt&shy;bildungs&shy;werk",
+        "session": "11:30",
+        "topic": "Anti-speciesist work in an educational context"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-03.jpg",
+        "imageAlt": "Friedrich Mülln",
+        "name": "Friedrich Mülln",
+        "session": "13:00",
+        "topic": "Resilience and perseverance in activism & successful campaigning"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-04.jpg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "14:30",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/placedog/speaker-05.jpg",
+        "imageAlt": "Anna Schubert and Hendrik Hassel",
+        "name": "Anna Schubert and Hendrik Hassel",
+        "session": "16:00",
+        "topic": "Undercover Animal Research"
+      },
+      {
+        "day": "sonntag",
+        "badge": "Panel",
+        "image": "/images/placedog/speaker-06.jpg",
+        "imageAlt": "Panel discussion on civil disobedience",
+        "name": "Panel Discussion",
+        "org": "Animal Rebellion + GGDT + Tierbefreier:innen + Neue Generation",
+        "session": "17:30",
+        "topic": "Civil Disobedience"
+      }
+    ],
+    "framework": {
+      "title": "On Site",
+      "items": [
+        {
+          "image": "/images/placedog/framework-01.jpg",
+          "imageAlt": "Village",
+          "title": "Village",
+          "eyebrow": "Info stands",
+          "paragraphs": [
+            "In addition to the talks, there is our Village outdoors, an open space for discussion, networking and relaxation. This is where initiatives, activist groups, collectives and projects from the animal rights and animal liberation movements come together.",
+            "At the information stands, various groups will present their work, share their experiences from campaigns and events, and invite visitors to chat. The Village is intended to be a place where knowledge is shared, new connections are made, and where ideas for future projects might also take shape.",
+            "You’ll also find stalls selling art and literature from the scene, as well as opportunities to get prints made. A tattoo artist will also be there, offering a range of designs.",
+            "The Village offers a communal space for meeting, discussing, networking and taking a breather between events."
+          ]
+        },
+        {
+          "image": "/images/placedog/framework-02-new.jpg",
+          "imageAlt": "Catering",
+          "title": "Catering",
+          "eyebrow": "Food stand",
+          "paragraphs": [
+            "During the conference, there will be a communal kitchen providing hot, vegan meals and snacks. The cooking will be a collaborative effort based on solidarity: simple, good food for everyone who attends.",
+            "Water and coffee will also be available throughout the day, so you can take a quick breather between discussions and sessions.",
+            "All food and drink is free of charge. If you are able and willing, we would be grateful for a donation to help cover the costs of food, facilities and the on-site program.",
+            "Everyone is welcome, regardless of their budget."
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions and Answers",
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Is there a charge for taking part?",
+          "answer": "No, attendance at the 2026 Leipzig Animal Rights Congress is free of charge. However, as the congress does incur costs, there will be an opportunity to make a voluntary donation on the day."
+        },
+        {
+          "question": "Where does the Congress take place?",
+          "answer": "The conference will take place in 2026 at the Ostwache in Leipzig. We are delighted to have found a venue there where talks, discussions and the on-site program can all come together."
+        },
+        {
+          "question": "What will happen if it rains?",
+          "answer": "Of course, we’re hoping for good weather. If it rains, we’ll cover the outdoor area as best we can with gazebos and tents so that the planned activities and stalls can still go ahead. The talks will take place indoors."
+        },
+        {
+          "question": "Is there anything to eat and drink there?",
+          "answer": "Yes. There will be a vegan food stall serving hot food, cakes and light snacks, with donations welcome. We will also be providing water, coffee and other drinks."
+        },
+        {
+          "question": "Is the conference barrier-free?",
+          "answer": "Yes. The entire outdoor area and the hall are wheelchair accessible. Our aim is to make the Animal Rights Congress accessible to as many people as possible. We strive to ensure that events and catering facilities are easily accessible for people with mobility impairments and that suitable toilet facilities are available. If you have any specific requirements, please let us know in advance so that we can make the necessary arrangements."
+        },
+        {
+          "question": "Can I bring my dog?",
+          "answer": "If you have no other option, you are welcome to bring dogs and other pets. Please keep them on a lead at all times and leave the room if they become restless, so as not to disturb the talks and discussions. We will provide a small water and snack station for dogs."
+        },
+        {
+          "question": "Is there a quota for speakers?",
+          "answer": "FLINTA* people are strongly represented in the animal rights and animal liberation movement. That is why we are also trying to recruit significantly more FLINTA* people as speakers for our events."
+        },
+        {
+          "question": "I don’t know much about the subject. Would the conference still be of interest to me?",
+          "answer": "Yes. The conference is specifically designed to appeal to people who are new to animal rights and animal liberation, or who have only recently become involved. It offers an opportunity to deepen one’s knowledge, engage in conversation with others, and perhaps even inspire a desire to get more involved."
+        },
+        {
+          "question": "Will the lectures be recorded?",
+          "answer": "We will discuss with each speaker individually whether and which presentations will be recorded. Where possible, we would like to record the presentations. Regardless of this, it is well worth attending in person, as the conference also provides an opportunity for networking and getting to know one another."
+        },
+        {
+          "question": "Are there ways to get involved? Do you need any help?",
+          "answer": "Yes. We’d love to hear from people who have the time and enthusiasm to support the conference, whether it’s with setting up and dismantling, admissions, outreach, technical support, translation, or as a day-of volunteer. If you’d like to get involved, please do get in touch."
+        },
+        {
+          "question": "In which languages will the conference be held?",
+          "answer": "We want to make the conference as inclusive as possible.\nWe therefore intend to provide English translation, at least for the afternoon presentations and the panel discussions.\nPlease contact us by email as soon as possible if you would like an English translation, so that we can better assess the demand for translations.\nPlease also get in touch if you do not understand either German or English and require a translation into another language. We will then work with you to see if a solution can be found."
+        }
+      ],
+      "team": [
+        {
+          "name": "Contact",
+          "org": "Questions?",
+          "emailUser": "tierrechtskongress",
+          "emailDomain": "systemli",
+          "emailTld": "org"
+        }
+      ]
+    },
+    "exclusion": {
+      "title": "Exclusion clause",
+      "paragraphs": [
+        "As organisers, we reserve the right to exclude individuals from the event and deny them entry if they promote nationalist, sexist, ableist, racist, homo-, inter- or transphobic positions, spread conspiracy ideologies or cross-front narratives, or can be associated with far-right parties, organisations or structures. This also applies to individuals who have previously attracted attention through antisemitic, racist, nationalist or other misanthropic statements."
+      ]
+    },
+    "imprint": {
+      "heading": "Legal Notice",
+      "paragraphs": [
+        "Information in accordance with Section 5 of the German Telemedia Act (TMG)",
+        "Leipzig Animal Rights Congress – Organising Committee\n",
+        "Lutherstr. 15\n04315 Leipzig\nGermany\n",
+        "Represented by:\nMarie Böhme\nRichard Böhme\n",
+        "Contact",
+        "Phone: +49 (0)156 79796840\nEmail: tierrechtskongress [at ]systemli [punkt ]org\n",
+        "Leipzig Animal Rights Congress – Organiser\n",
+        "Ostwache Leipzig e.V.\n",
+        "Gregor-Fuchs-Straße 45-47\n04318 Leipzig\n",
+        "Email: kontakt [at] ostwache [punkt] org\n",
+        "Responsible for content in accordance with Section 18(2) of the Media Services State Treaty",
+        "Marie Böhme\nLutherstr. 15\n04315 Leipzig\n",
+        "Placeholder dog photos via https://placedog.net/"
+      ]
+    }
+  },
+  "locale": "en"
+}

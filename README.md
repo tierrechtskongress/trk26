@@ -1,21 +1,17 @@
 # Tierrechtskongress Leipzig
 
-This repository contains the static 11ty one-pager for the Tierrechtskongress Leipzig site.
+This repository contains the static 11ty site for the Tierrechtskongress Leipzig.
+
+- Live site: <https://tierrechtskongress.org/>
+- Repository: <https://github.com/veganinleipzig/TRK26>
 
 ## Project Shape
 
-- Source content and templates live under `src/`.
-- The local preview build is generated into `output/site/`.
+- Source content, templates, styles, and assets live under `src/`.
+- The root-hostable preview and deploy output is generated into `output/site/`.
+- Pages CMS content structure is defined in `.pages.yml`.
 
-## Build
-
-Build the root-hostable site into `output/site/`:
-
-```bash
-npm run build
-```
-
-## Local Preview
+## Local Development
 
 Start the local preview workflow:
 
@@ -23,16 +19,26 @@ Start the local preview workflow:
 npm run dev
 ```
 
-The site is then available at:
+The site is then available at `http://localhost:4000/`.
 
-```text
-http://localhost:4000/
+## Build
+
+Build the site into `output/site/`:
+
+```bash
+npm run build
 ```
 
 ## Deployment
 
-Deployment runs via GitHub Pages using the workflow in `.github/workflows/deploy.yaml`.
+Deployment runs via GitHub Pages using `.github/workflows/deploy.yaml`.
 Pushes to `main` trigger a build and deploy from `output/site/`.
+
+## License
+
+Project-specific code, content, configuration, and documentation are provided under MIT.
+Inherited theme-derived assets from HTML5 UP Stellar remain under CC BY 3.0.
+See [LICENSE](LICENSE) for details.
 
 ## Notes
 

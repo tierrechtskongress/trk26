@@ -1,0 +1,3 @@
+---
+layout: congress.njk
+---

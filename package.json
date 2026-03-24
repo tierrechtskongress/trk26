@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-html5up-stellar",
+  "name": "tierrechtskongress-leipzig",
   "version": "1.0.0",
-  "description": "Minimal Eleventy 11ty starter with modern tools and a nice UI/UX (by HTML5Up)",
+  "description": "Static Eleventy site for the Tierrechtskongress Leipzig.",
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
@@ -11,24 +11,22 @@
     "eleventy:watch": "npx eleventy --watch",
     "styles:dev": "sass ./src/assets/sass/:${ELEVENTY_OUTPUT_DIR:-output/site}/assets/css/ --source-map && postcss ${ELEVENTY_OUTPUT_DIR:-output/site}/assets/css/*.css --replace",
     "styles:prod": "sass ./src/assets/sass/:${ELEVENTY_OUTPUT_DIR:-output/site}/assets/css/ --style compressed && postcss ${ELEVENTY_OUTPUT_DIR:-output/site}/assets/css/*.css --replace",
-    "scripts:prod": "webpack --mode=production",
-    "scripts:dev": "webpack --mode=development",
     "serve": "light-server -c .lightserverrc",
-    "dev": "ELEVENTY_OUTPUT_DIR=output/site npm-run-all clean styles:dev scripts:dev eleventy:default --parallel eleventy:watch serve --print-label",
+    "dev": "ELEVENTY_OUTPUT_DIR=output/site npm-run-all clean styles:dev eleventy:default --parallel eleventy:watch serve --print-label",
     "dev:debug": "DEBUG=* npm run dev",
-    "build:site": "ELEVENTY_OUTPUT_DIR=output/site run-s clean styles:prod scripts:prod eleventy:default --print-label",
+    "build:site": "ELEVENTY_OUTPUT_DIR=output/site run-s clean styles:prod eleventy:default --print-label",
     "build": "npm run build:site"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/app-generator/eleventy-html5up-stellar.git"
+    "url": "git+https://github.com/veganinleipzig/TRK26.git"
   },
   "author": "",
-  "license": "CCY 3.0",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/app-generator/eleventy-html5up-stellar/issues"
+    "url": "https://github.com/veganinleipzig/TRK26/issues"
   },
-  "homepage": "https://eleventy-html5up-stellar.appseed.us",
+  "homepage": "https://tierrechtskongress.org/",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "autoprefixer": "^9.8.8",
@@ -38,17 +36,8 @@
     "sass": "^1.97.3"
   },
   "dependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "acorn": "^7.0.0",
-    "babel-loader": "^8.0.6",
     "cssnano": "^4.1.10",
-    "cssnano-preset-advanced": "^4.0.7",
-    "ftp-deploy": "^2.3.3",
-    "mkdirp": "1.0.3",
     "npm-run-all": "^4.1.5",
-    "rimraf": "3.0.2",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9"
+    "rimraf": "3.0.2"
   }
 }

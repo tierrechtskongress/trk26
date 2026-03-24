@@ -1,8 +1,8 @@
 {
-  "title": "Tierrechtskongress Leipzig 2026 - Leipzig Animal Rights Congress 2026",
-  "displayTitle": "Tierrechts&shy;kongress Leipzig 2026 - Leipzig Animal Rights Congress 2026",
-  "subtitle": "23.-24. Mai 2026 in der Ostwache in Leipzig - 23.-24. May 2026 at the Ostwache in Leipzig",
-  "siteName": "Tierrechtskongress Leipzig - Leipzig Animal Rights Congress",
+  "title": "Tierrechtskongress Leipzig 2026",
+  "displayTitle": "Tierrechts&shy;kongress Leipzig 2026",
+  "subtitle": "23.-24. Mai 2026 in der Ostwache in Leipzig",
+  "siteName": "Tierrechtskongress Leipzig",
   "url_mainfill": "/images/hero/header.png",
   "bodyClass": "variant-one",
   "hero": {
@@ -51,34 +51,34 @@
   },
   "congress": {
     "donate": {
-      "title": "Unterstütze uns - Support us",
-      "text": "Mit deiner Spende hilfst du dabei, Räume, Technik, Materialien und das Rahmenprogramm für den Kongress zu finanzieren.\nYour donation will help to fund the venue, equipment, materials and the supporting programme for the conference.",
-      "ctaLabel": "Zum Spendenaufruf - Call for Donations",
+      "title": "Unterstütze uns",
+      "text": "Mit deiner Spende hilfst du dabei, Räume, Technik, Materialien und das Rahmenprogramm für den Kongress zu finanzieren.",
+      "ctaLabel": "Zum Spendenaufruf",
       "href": "https://spenden.twingle.de/transformation-fordern-e-v/tierrechtskongress/tw6983028ce7f5e/page"
     },
     "quickFacts": [
       {
-        "label": "Zeit - Time",
-        "value": "23.-24.05.2026 10-19Uhr"
+        "label": "Zeit",
+        "value": "23.-24.05.2026 10-19 Uhr"
       },
       {
-        "label": "Ort - Location",
+        "label": "Ort",
         "value": "Ostwache, Leipzig"
       },
       {
-        "label": "Eintritt - Price",
-        "value": "kostenlos - free"
+        "label": "Eintritt",
+        "value": "kostenlos"
       },
       {
-        "label": "Vorträge - Lectures",
+        "label": "Vorträge",
         "value": "10"
       }
     ],
     "intro": {
       "paragraphs": [
-        "Am Wochenende vom 23. bis 24. Mai 2026 findet in der Ostwache in Leipzig der Tierrechtskongress Leipzig statt. Organisiert wird der Kongress von einer Gruppe Freiwilliger lokaler und veganer Tierbefreiungsgruppen.\nThe Leipzig Animal Rights Congress will take place at the Ostwache in Leipzig on the weekend of 23–24 May 2026. The congress is being organised by a group of volunteers from local and vegan animal liberation groups.\n______________________________________________________________________________________________",
-        "Dabei setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Perspektiven der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierethik, Tierrecht, Tierrettung aus Krisengebieten, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben. Darüber hinaus sind Podiumsdiskussionen zu Aktionsformen wie Kampagnen und zivilem Ungehorsam geplant.\nNumerous speakers will engage critically with various perspectives on the work for animal liberation and animal rights. There will be talks on animal ethics, animal rights, animal rescue from crisis zones, phasing out the animal industry, anti-speciesist work in an educational context and other fascinating topics. In addition, panel discussions on forms of action such as campaigns and civil disobedience are planned.\n______________________________________________________________________________________________",
-        "Neben den Vorträgen wird der Kongress auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent:innen bieten. Ziel des Kongresses ist es, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren.\nIn addition to the presentations, the conference will also provide opportunities for informal discussion and follow-up talks with the speakers. The aim of the conference is to bring together the animal rights movement and interested individuals, and to discuss common ground and the challenges of activist practice."
+        "Am Wochenende vom 23. bis 24. Mai 2026 findet in der Ostwache in Leipzig der Tierrechtskongress Leipzig statt. Organisiert wird der Kongress von einer Gruppe Freiwilliger lokaler und veganer Tierbefreiungsgruppen.",
+        "Dabei setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Perspektiven der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierethik, Tierrecht, Tierrettung aus Krisengebieten, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben. Darüber hinaus sind Podiumsdiskussionen zu Aktionsformen wie Kampagnen und zivilem Ungehorsam geplant.",
+        "Neben den Vorträgen wird der Kongress auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent:innen bieten. Ziel des Kongresses ist es, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren."
       ]
     },
     "overview": {
@@ -97,7 +97,7 @@
     "speakers": [
       {
         "day": "samstag",
-        "badge": "Eröffnung - Opening",
+        "badge": "Eröffnung",
         "image": "/images/placedog/speaker-07.jpg",
         "imageAlt": "tba",
         "name": "tba",
@@ -110,7 +110,7 @@
         "imageAlt": "Hilal Sezgin",
         "name": "Hilal Sezgin",
         "session": "11:30 Uhr",
-        "topic": "Tierethik - Animal ethics"
+        "topic": "Tierethik"
       },
       {
         "day": "samstag",
@@ -118,7 +118,7 @@
         "imageAlt": "Marie Kolb and Josephine Götze",
         "name": "Marie Kolb & Josephine Götze",
         "session": "13:00 Uhr",
-        "topic": "Warum Tierschutz nicht ausreicht, ein Appell für Tierrechte - Why animal welfare is not enough, a call for animal rights"
+        "topic": "Warum Tierschutz nicht ausreicht, ein Appell für Tierrechte"
       },
       {
         "day": "samstag",
@@ -126,7 +126,7 @@
         "imageAlt": "Rike Schmitz",
         "name": "Rike Schmitz",
         "session": "14:30 Uhr",
-        "topic": "Tierethik - Animal Ethics"
+        "topic": "Tierethik"
       },
       {
         "day": "samstag",
@@ -134,17 +134,17 @@
         "imageAlt": "Tiphaine Lagarde",
         "name": "Tiphaine Lagarde",
         "session": "16:00 Uhr",
-        "topic": "Organisation direkter Aktionen gegen die Tierindustrie / Umsetzung feministischer Prinzipien bei der Durchführung direkter Aktionen und des Einsatzes eigener Körper als politisches Werkzeug - Organising direct actions against the animal industry / Applying feminist principles when carrying out direct actions and using one’s own body as a political tool"
+        "topic": "Organisation direkter Aktionen gegen die Tierindustrie / Umsetzung feministischer Prinzipien bei der Durchführung direkter Aktionen und des Einsatzes eigener Körper als politisches Werkzeug"
       },
       {
         "day": "samstag",
         "badge": "Podium",
         "image": "/images/placedog/speaker-12.jpg",
-        "imageAlt": "Podiumsdiskussion Kampagnen - Panel discussion on campaigns",
+        "imageAlt": "Podiumsdiskussion Kampagnen",
         "name": "Podiums&shy;diskussion",
         "org": "tba.",
         "session": "17:30 Uhr",
-        "topic": "Kampagnen - Campaigning"
+        "topic": "Kampagnen"
       },
       {
         "day": "sonntag",
@@ -152,7 +152,7 @@
         "imageAlt": "Notpfote",
         "name": "Notpfote",
         "session": "10:00 Uhr",
-        "topic": "Tierrettung aus Krisengebieten - Animal rescue from areas in crisis"
+        "topic": "Tierrettung aus Krisengebieten"
       },
       {
         "day": "sonntag",
@@ -160,7 +160,7 @@
         "imageAlt": "Umweltbildungswerk",
         "name": "Umwelt&shy;bildungs&shy;werk",
         "session": "11:30 Uhr",
-        "topic": "Antispeziesistische Arbeit im Bildungskontext - Anti-speciesist work in an educational context"
+        "topic": "Antispeziesistische Arbeit im Bildungskontext"
       },
       {
         "day": "sonntag",
@@ -168,7 +168,7 @@
         "imageAlt": "Friedrich Mülln",
         "name": "Friedrich Mülln",
         "session": "13:00 Uhr",
-        "topic": "Resilienz und Beständigkeit im Aktivismus & erfolgreiche Kampagnenarbeit - Resilience and perseverance in activism & successful campaigning"
+        "topic": "Resilienz und Beständigkeit im Aktivismus & erfolgreiche Kampagnenarbeit"
       },
       {
         "day": "sonntag",
@@ -184,17 +184,17 @@
         "imageAlt": "Anna Schubert und Hendrik Hassel",
         "name": "Anna Schubert und Hendrik Hassel",
         "session": "16:00 Uhr",
-        "topic": "Undercover Tierrecherche - Undercover Animal Research"
+        "topic": "Undercover Tierrecherche"
       },
       {
         "day": "sonntag",
         "badge": "Podium",
         "image": "/images/placedog/speaker-06.jpg",
-        "imageAlt": "Podiumsdiskussion Ziviler Ungehorsam - Panel discussion on civil disobedience",
+        "imageAlt": "Podiumsdiskussion Ziviler Ungehorsam",
         "name": "Podiums&shy;diskussion",
         "org": "Animal Rebellion + GGDT + Tierbefreier:innen + Neue Generation",
         "session": "17:30 Uhr",
-        "topic": "Ziviler Ungehorsam - Civil Disobedience"
+        "topic": "Ziviler Ungehorsam"
       }
     ],
     "framework": {
@@ -206,79 +206,79 @@
           "title": "Village",
           "eyebrow": "Posterstand",
           "paragraphs": [
-            "Neben den Vorträgen gibt es im Freien unser Village, einen offenen Raum für Austausch, Vernetzung und Entspannung. Hier treffen Initiativen, Aktivist*innengruppen, Kollektive und Projekte aus der Tierrechts- und Tierbefreiungsbewegung aufeinander.\nIn addition to the talks, there is our Village outdoors, an open space for discussion, networking and relaxation. This is where initiatives, activist groups, collectives and projects from the animal rights and animal liberation movements come together.\n______________________________________________________________________________",
-            "An den Infoständen stellen verschiedene Gruppen ihre Arbeit vor, berichten von ihren Erfahrungen aus Kampagnen und Aktionen und laden zum Gespräch ein. Das Village soll ein Ort sein, an dem Wissen weitergegeben wird, an dem neue Kontakte entstehen und an dem vielleicht auch Ideen für zukünftige Projekte wachsen.\nAt the information stands, various groups will present their work, share their experiences from campaigns and events, and invite visitors to chat. The Village is intended to be a place where knowledge is shared, new connections are made, and where ideas for future projects might also take shape.\n______________________________________________________________________________",
-            "Daneben findet ihr Stände mit Kunst und Literatur aus der Szene sowie Möglichkeiten für Drucke und Prints. Auch eine Tätowiererin wird vor Ort sein und passende Motive anbieten.\nYou’ll also find stalls selling art and literature from the scene, as well as opportunities to get prints made. A tattoo artist will also be there, offering a range of designs.\n______________________________________________________________________________",
-            "Das Village bietet einen gemeinsamen Raum zum Treffen, Diskutieren, Vernetzen und Durchatmen zwischen den Programmpunkten.\nThe Village offers a communal space for meeting, discussing, networking and taking a breather between programme events.\n______________________________________________________________________________"
+            "Neben den Vorträgen gibt es im Freien unser Village, einen offenen Raum für Austausch, Vernetzung und Entspannung. Hier treffen Initiativen, Aktivist*innengruppen, Kollektive und Projekte aus der Tierrechts- und Tierbefreiungsbewegung aufeinander.",
+            "An den Infoständen stellen verschiedene Gruppen ihre Arbeit vor, berichten von ihren Erfahrungen aus Kampagnen und Aktionen und laden zum Gespräch ein. Das Village soll ein Ort sein, an dem Wissen weitergegeben wird, an dem neue Kontakte entstehen und an dem vielleicht auch Ideen für zukünftige Projekte wachsen.",
+            "Daneben findet ihr Stände mit Kunst und Literatur aus der Szene sowie Möglichkeiten für Drucke und Prints. Auch eine Tätowiererin wird vor Ort sein und passende Motive anbieten.",
+            "Das Village bietet einen gemeinsamen Raum zum Treffen, Diskutieren, Vernetzen und Durchatmen zwischen den Programmpunkten."
           ]
         },
         {
           "image": "/images/placedog/framework-02-new.jpg",
-          "imageAlt": "Gastro - Catering",
-          "title": "Gastro - Catering",
+          "imageAlt": "Gastro",
+          "title": "Gastro",
           "eyebrow": "Essensstand",
           "paragraphs": [
-            "Während des Kongresses wird es eine Küfa (Küche für alle) geben, die euch mit warmem, veganem Essen und Snacks versorgt. Gekocht wird solidarisch und gemeinschaftlich: Einfaches, gutes Essen für alle, die da sind.\nDuring the conference, there will be a communal kitchen providing hot, vegan meals and snacks. The cooking will be a collaborative effort based on solidarity: simple, good food for everyone who attends.\n______________________________________________________________________________",
-            "Außerdem stehen über den Tag verteilt Wasser und Kaffee bereit, damit ihr zwischen Gesprächen und Programmpunkten kurz durchatmen könnt.\nWater and coffee will also be available throughout the day, so you can take a quick breather between discussions and programme items.\n______________________________________________________________________________",
-            "Alle Speisen und Getränke sind kostenlos. Wenn ihr könnt und möchtet, freuen wir uns über eine Spende, um die Kosten für Lebensmittel, Infrastruktur und das Kongressprogramm mitzutragen.\nAll food and drink is free of charge. If you are able and willing, we would be grateful for a donation to help cover the costs of food, facilities and the conference programme.\n______________________________________________________________________________",
-            "Alle sind willkommen, unabhängig vom Geldbeutel.\nEveryone is welcome, regardless of their budget."
+            "Während des Kongresses wird es eine Küfa (Küche für alle) geben, die euch mit warmem, veganem Essen und Snacks versorgt. Gekocht wird solidarisch und gemeinschaftlich: Einfaches, gutes Essen für alle, die da sind.",
+            "Außerdem stehen über den Tag verteilt Wasser und Kaffee bereit, damit ihr zwischen Gesprächen und Programmpunkten kurz durchatmen könnt.",
+            "Alle Speisen und Getränke sind kostenlos. Wenn ihr könnt und möchtet, freuen wir uns über eine Spende, um die Kosten für Lebensmittel, Infrastruktur und das Kongressprogramm mitzutragen.",
+            "Alle sind willkommen, unabhängig vom Geldbeutel."
           ]
         }
       ]
     },
     "faq": {
-      "title": "Fragen und Antworten - Questions and Answers",
-      "heading": "Häufige Fragen - Popular Questions",
+      "title": "Fragen und Antworten",
+      "heading": "Häufige Fragen",
       "items": [
         {
-          "question": "Kostet die Teilnahme etwas? - Is there a charge for taking part?",
-          "answer": "Nein, die Teilnahme am Tierrechtskongress Leipzig 2026 ist kostenlos. Da der Kongress dennoch Kosten verursacht, wird es vor Ort die Möglichkeit geben, freiwillig zu spenden.\n_________________________________________________________________________________________\nNo, attendance at the 2026 Leipzig Animal Rights Congress is free of charge. However, as the congress does incur costs, there will be an opportunity to make a voluntary donation on the day."
+          "question": "Kostet die Teilnahme etwas?",
+          "answer": "Nein, die Teilnahme am Tierrechtskongress Leipzig 2026 ist kostenlos. Da der Kongress dennoch Kosten verursacht, wird es vor Ort die Möglichkeit geben, freiwillig zu spenden."
         },
         {
-          "question": "Wo findet der Kongress statt? - Where does the Congress take place?",
-          "answer": "Der Kongress findet 2026 in der Ostwache in Leipzig statt. Wir freuen uns sehr, dort einen Ort gefunden zu haben, an dem Vorträge, Austausch und Rahmenprogramm zusammenkommen können.\n_________________________________________________________________________________________\nThe conference will take place in 2026 at the Ostwache in Leipzig. We are delighted to have found a venue there where lectures, discussions and the supporting programme can all come together."
+          "question": "Wo findet der Kongress statt?",
+          "answer": "Der Kongress findet 2026 in der Ostwache in Leipzig statt. Wir freuen uns sehr, dort einen Ort gefunden zu haben, an dem Vorträge, Austausch und Rahmenprogramm zusammenkommen können."
         },
         {
-          "question": "Was passiert bei Regen? - What will happen if it rains?",
-          "answer": "Natürlich hoffen wir auf gutes Wetter. Falls es regnet, werden wir den Außenbereich so gut es geht mit Pavillons und Zelten überdachen, sodass geplante Aktivitäten und Stände weiterhin stattfinden können. Die Vorträge finden drinnen statt.\n_________________________________________________________________________________________\nOf course, we’re hoping for good weather. If it rains, we’ll cover the outdoor area as best we can with gazebos and tents so that the planned activities and stalls can still go ahead. The talks will take place indoors."
+          "question": "Was passiert bei Regen?",
+          "answer": "Natürlich hoffen wir auf gutes Wetter. Falls es regnet, werden wir den Außenbereich so gut es geht mit Pavillons und Zelten überdachen, sodass geplante Aktivitäten und Stände weiterhin stattfinden können. Die Vorträge finden drinnen statt."
         },
         {
-          "question": "Gibt es vor Ort etwas zu essen und trinken? - Is there anything to eat and drink there?",
-          "answer": "Ja. Es wird eine vegane Küfa mit warmem Essen, Kuchen und kleinen Snacks gegen Spende geben. Außerdem stellen wir Wasser, Kaffee und andere Getränke zur Verfügung.\n_________________________________________________________________________________________\nYes. There will be a vegan food stall serving hot food, cakes and light snacks, with donations welcome. We will also be providing water, coffee and other drinks."
+          "question": "Gibt es vor Ort etwas zu essen und trinken?",
+          "answer": "Ja. Es wird eine vegane Küfa mit warmem Essen, Kuchen und kleinen Snacks gegen Spende geben. Außerdem stellen wir Wasser, Kaffee und andere Getränke zur Verfügung."
         },
         {
-          "question": "Ist der Kongress barrierefrei? - Is the conference barrier-free?",
-          "answer": "Ja. Das gesamte Außengelände und der Saal sind barrierefrei. Unser Anspruch ist es, den Tierrechtskongress für möglichst viele Menschen zugänglich zu machen. Wir versuchen, dass Veranstaltungen und Verpflegungsangebote auch für Menschen mit Gehbehinderung gut erreichbar sind und geeignete sanitäre Anlagen zur Verfügung stehen. Wenn ihr konkrete Bedarfe habt, schreibt uns bitte vorab, damit wir uns möglichst gut darauf einstellen können.\n_________________________________________________________________________________________\nYes. The entire outdoor area and the hall are wheelchair accessible. Our aim is to make the Animal Rights Congress accessible to as many people as possible. We strive to ensure that events and catering facilities are easily accessible for people with mobility impairments and that suitable toilet facilities are available. If you have any specific requirements, please let us know in advance so that we can make the necessary arrangements."
+          "question": "Ist der Kongress barrierefrei?",
+          "answer": "Ja. Das gesamte Außengelände und der Saal sind barrierefrei. Unser Anspruch ist es, den Tierrechtskongress für möglichst viele Menschen zugänglich zu machen. Wir versuchen, dass Veranstaltungen und Verpflegungsangebote auch für Menschen mit Gehbehinderung gut erreichbar sind und geeignete sanitäre Anlagen zur Verfügung stehen. Wenn ihr konkrete Bedarfe habt, schreibt uns bitte vorab, damit wir uns möglichst gut darauf einstellen können."
         },
         {
-          "question": "Darf ich meinen Hund mitbringen? - Can I bring my dog?",
-          "answer": "Falls es euch nicht anders möglich ist, dürfen Hunde und andere Tiere mitgebracht werden. Bitte führt sie immer an der Leine und verlasst den Raum, wenn sie unruhig werden, damit Vorträge und Gespräche nicht gestört werden. Wir werden eine kleine Wasser- und Snack-Station für Hunde bereitstellen.\n_________________________________________________________________________________________\nIf you have no other option, you are welcome to bring dogs and other pets. Please keep them on a lead at all times and leave the room if they become restless, so as not to disturb the talks and discussions. We will provide a small water and snack station for dogs."
+          "question": "Darf ich meinen Hund mitbringen?",
+          "answer": "Falls es euch nicht anders möglich ist, dürfen Hunde und andere Tiere mitgebracht werden. Bitte führt sie immer an der Leine und verlasst den Raum, wenn sie unruhig werden, damit Vorträge und Gespräche nicht gestört werden. Wir werden eine kleine Wasser- und Snack-Station für Hunde bereitstellen."
         },
         {
-          "question": "Gibt es eine Quote für Referent*innen? - Is there a quota for speakers?",
-          "answer": "FLINTA*-Personen sind in der Tierrechts- und Tierbefreiungsbewegung stark vertreten. Deshalb versuchen wir auch bei den Vorträgen, deutlich mehr FLINTA*-Personen als Referent*innen zu gewinnen.\n_________________________________________________________________________________________\nFLINTA* people are strongly represented in the animal rights and animal liberation movement. That is why we are also trying to recruit significantly more FLINTA* people as speakers for our events."
+          "question": "Gibt es eine Quote für Referent*innen?",
+          "answer": "FLINTA*-Personen sind in der Tierrechts- und Tierbefreiungsbewegung stark vertreten. Deshalb versuchen wir auch bei den Vorträgen, deutlich mehr FLINTA*-Personen als Referent*innen zu gewinnen."
         },
         {
-          "question": "Ich bin nicht sehr tief in der Materie drin. Ist der Kongress trotzdem etwas für mich? - I don’t know much about the subject. Would the conference still be of interest to me?",
-          "answer": "Ja. Der Kongress soll ausdrücklich auch Menschen ansprechen, die sich neu oder erst seit kurzem mit Tierrechten und Tierbefreiung beschäftigen. Er bietet die Möglichkeit, Wissen zu vertiefen, mit anderen ins Gespräch zu kommen und vielleicht selbst Lust auf weiteres Engagement zu bekommen.\n_________________________________________________________________________________________\nYes. The conference is specifically designed to appeal to people who are new to animal rights and animal liberation, or who have only recently become involved. It offers an opportunity to deepen one’s knowledge, engage in conversation with others, and perhaps even inspire a desire to get more involved."
+          "question": "Ich bin nicht sehr tief in der Materie drin. Ist der Kongress trotzdem etwas für mich?",
+          "answer": "Ja. Der Kongress soll ausdrücklich auch Menschen ansprechen, die sich neu oder erst seit kurzem mit Tierrechten und Tierbefreiung beschäftigen. Er bietet die Möglichkeit, Wissen zu vertiefen, mit anderen ins Gespräch zu kommen und vielleicht selbst Lust auf weiteres Engagement zu bekommen."
         },
         {
-          "question": "Werden die Vorträge aufgezeichnet? - Will the lectures be recorded?",
-          "answer": "Ob und welche Vorträge aufgezeichnet werden, stimmen wir individuell mit den Referent*innen ab. Wenn es möglich ist, möchten wir Vorträge dokumentieren. Unabhängig davon lohnt sich der Besuch vor Ort, weil der Kongress auch dem Austausch und Kennenlernen dient.\n_________________________________________________________________________________________\nWe will discuss with each speaker individually whether and which presentations will be recorded. Where possible, we would like to record the presentations. Regardless of this, it is well worth attending in person, as the conference also provides an opportunity for networking and getting to know one another."
+          "question": "Werden die Vorträge aufgezeichnet?",
+          "answer": "Ob und welche Vorträge aufgezeichnet werden, stimmen wir individuell mit den Referent*innen ab. Wenn es möglich ist, möchten wir Vorträge dokumentieren. Unabhängig davon lohnt sich der Besuch vor Ort, weil der Kongress auch dem Austausch und Kennenlernen dient."
         },
         {
-          "question": "Gibt es Möglichkeiten mitzumachen? Braucht ihr Hilfe? - Are there ways to get involved? Do you need any help?",
-          "answer": "Ja. Wir freuen uns über Menschen, die Zeit und Motivation mitbringen und den Kongress unterstützen möchten, etwa beim Auf- und Abbau, Einlass, Awareness, Technik, Übersetzungen oder als Tageshelfer*in. Wenn ihr mitmachen möchtet, schreibt uns gerne.\n_________________________________________________________________________________________\nYes. We’d love to hear from people who have the time and enthusiasm to support the conference, whether it’s with setting up and dismantling, admissions, outreach, technical support, translation, or as a day-of volunteer. If you’d like to get involved, please do get in touch."
+          "question": "Gibt es Möglichkeiten mitzumachen? Braucht ihr Hilfe?",
+          "answer": "Ja. Wir freuen uns über Menschen, die Zeit und Motivation mitbringen und den Kongress unterstützen möchten, etwa beim Auf- und Abbau, Einlass, Awareness, Technik, Übersetzungen oder als Tageshelfer*in. Wenn ihr mitmachen möchtet, schreibt uns gerne."
         },
         {
-          "question": "In welchen Sprachen findet der Kongress statt? - In which languages will the conference be held?",
-          "answer": "Wir wollen den Kongress möglichst inklusiv gestalten.\nWir beabsichtigen daher, zumindest für die Vorträge am Nachmittag und die Podiumsdiskussionen eine Übersetzung ins Englische zu ermöglichen.\nBitte melde dich möglichst früh per E-Mail bei uns, damit wir den Bedarf an Übersetzungen besser einschätzen können, wenn du zu den Personen gehörst, die gerne eine Übersetzung ins Englische hätten.\nBitte melde dich außerdem, wenn du weder Deutsch noch Englisch verstehst und eine Übersetzung in eine andere Sprache benötigst. Wir versuchen dann gemeinsam herauszufinden, ob es hierfür eine Lösung geben kann.\n_________________________________________________________________________________________\nWe want to make the conference as inclusive as possible.\nWe therefore intend to provide English translation, at least for the afternoon presentations and the panel discussions.\nPlease contact us by email as soon as possible if you would like an English translation, so that we can better assess the demand for translations.\nPlease also get in touch if you do not understand either German or English and require a translation into another language. We will then work with you to see if a solution can be found."
+          "question": "In welchen Sprachen findet der Kongress statt?",
+          "answer": "Wir wollen den Kongress möglichst inklusiv gestalten.\nWir beabsichtigen daher, zumindest für die Vorträge am Nachmittag und die Podiumsdiskussionen eine Übersetzung ins Englische zu ermöglichen.\nBitte melde dich möglichst früh per E-Mail bei uns, damit wir den Bedarf an Übersetzungen besser einschätzen können, wenn du zu den Personen gehörst, die gerne eine Übersetzung ins Englische hätten.\nBitte melde dich außerdem, wenn du weder Deutsch noch Englisch verstehst und eine Übersetzung in eine andere Sprache benötigst. Wir versuchen dann gemeinsam herauszufinden, ob es hierfür eine Lösung geben kann."
         }
       ],
       "team": [
         {
           "name": "Kontakt",
-          "org": "Fragen rund um Teilnahme und Ablauf - Questions?",
+          "org": "Fragen rund um Teilnahme und Ablauf",
           "emailUser": "tierrechtskongress",
           "emailDomain": "systemli",
           "emailTld": "org"
@@ -292,22 +292,23 @@
       ]
     },
     "imprint": {
-      "heading": "Impressum - Legal Notice",
+      "heading": "Impressum",
       "paragraphs": [
-        "Angaben gemäß § 5 TMG - Information in accordance with Section 5 of the German Telemedia Act (TMG)",
-        "Tierrechtskongress Leipzig – Organisationsgruppe\nLeipzig Animal Rights Congress – Organising Committee\n",
+        "Angaben gemäß § 5 TMG",
+        "Tierrechtskongress Leipzig – Organisationsgruppe\n",
         "Lutherstr. 15\n04315 Leipzig\nDeutschland\n",
-        "Vertreten durch/ Represented by:\nMarie Böhme\nRichard Böhme\n",
-        "Kontakt - Contact",
+        "Vertreten durch:\nMarie Böhme\nRichard Böhme\n",
+        "Kontakt",
         "Telefon: +49 (0)156 79796840\nE-Mail: tierrechtskongress [at ]systemli [punkt ]org\n",
-        "Tierrechtskongress Leipzig – Veranstalterin\nLeipzig Animal Rights Congress – Organiser",
+        "Tierrechtskongress Leipzig – Veranstalterin\n",
         "Ostwache Leipzig e.V.\n",
         "Gregor-Fuchs-Straße 45-47\n04318 Leipzig\n",
         "E-Mail: kontakt [at] ostwache [punkt] org\n",
-        "Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV\nResponsible for content in accordance with Section 18(2) of the Media Services State Treaty",
+        "Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV",
         "Marie Böhme\nLutherstr. 15\n04315 Leipzig\n",
         "Platzhalter Hundefotos via https://placedog.net/"
       ]
     }
-  }
+  },
+  "locale": "de"
 }

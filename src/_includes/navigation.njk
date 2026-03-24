@@ -1,9 +1,25 @@
-<nav class="hero-jumpnav" aria-label="{{ navigation.ariaLabel }}">
-    {% for item in navigation.items %}
-    <a class="scrolly" href="{{ item.href }}" aria-label="{{ item.ariaLabel }}">
-        <span class="nav-icon fas fa-{{ item.icon }}" aria-hidden="true"></span>
-        <span class="nav-label">{{ item.label }}</span>
-        <span class="nav-short" aria-hidden="true">{{ item.shortLabel }}</span>
-    </a>
-    {% endfor %}
-</nav>
+{% set currentLocale = locale or 'de' %}
+{% set languageSwitcherLabel = 'Sprache wechseln' if currentLocale == 'de' else 'Change language' %}
+{% set languageItems = [
+    { "code": "de", "label": "DE", "href": "/" },
+    { "code": "en", "label": "EN", "href": "/en/" }
+] %}
+<div class="site-nav-shell">
+    <nav class="hero-jumpnav" aria-label="{{ navigation.ariaLabel }}">
+        {% for item in navigation.items %}
+        <a class="scrolly" href="{{ item.href }}" aria-label="{{ item.ariaLabel }}">
+            <span class="nav-icon fas fa-{{ item.icon }}" aria-hidden="true"></span>
+            <span class="nav-label">{{ item.label }}</span>
+            <span class="nav-short" aria-hidden="true">{{ item.shortLabel }}</span>
+        </a>
+        {% endfor %}
+    </nav>
+    <div class="language-switcher" aria-label="{{ languageSwitcherLabel }}">
+        {% for item in languageItems %}
+        {% set isCurrent = item.code == currentLocale %}
+        <a class="language-switcher__link{% if isCurrent %} is-current{% endif %}" href="{{ item.href | url }}" lang="{{ item.code }}"{% if isCurrent %} aria-current="page"{% endif %}>
+            {{ item.label }}
+        </a>
+        {% endfor %}
+    </div>
+</div>
