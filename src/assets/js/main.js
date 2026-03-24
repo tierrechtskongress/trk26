@@ -208,14 +208,23 @@
 
 			navLinks.forEach(function(link) {
 				link.addEventListener('click', function() {
+					var targetHash = link.getAttribute('href');
+
 					if (activeLinkTimeout) {
 						window.clearTimeout(activeLinkTimeout);
 						activeLinkTimeout = null;
 					}
 
+					if (targetHash && targetHash.charAt(0) === '#') {
+						if (window.history && window.history.replaceState)
+							window.history.replaceState(null, document.title, targetHash);
+						else
+							window.location.hash = targetHash;
+					}
+
 					scrollLockUntil = Date.now() + 450;
 					pendingId = null;
-					setActiveLink(link.getAttribute('href'));
+					setActiveLink(targetHash);
 					window.setTimeout(scheduleActiveLinkUpdate, 470);
 				});
 			});

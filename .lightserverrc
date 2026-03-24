@@ -1,7 +1,7 @@
 {
  "port": 4000,
  "serve": "output/site",
- "bind": "localhost",
+ "bind": "127.0.0.1",
  "delay": 100,
  "quiet": true,
  "watchexps": [
