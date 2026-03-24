@@ -96,8 +96,8 @@
     },
     "speakers": [
       {
-        "day": "samstag - saturday",
-        "badge": "Eröffnung - Opening",
+        "day": "samstag",
+        "badge": "Eröffnung",
         "image": "/images/placedog/speaker-07.jpg",
         "imageAlt": "Thomas Hecquet",
         "name": "Thomas Hecquet",
