@@ -96,11 +96,11 @@
     },
     "speakers": [
       {
-        "day": "samstag",
-        "badge": "Eröffnung",
+        "day": "samstag - saturday",
+        "badge": "Eröffnung - Opening",
         "image": "/images/placedog/speaker-07.jpg",
-        "imageAlt": "Thomas Hecquet",
-        "name": "Thomas Hecquet",
+        "imageAlt": "tba",
+        "name": "tba",
         "session": "10:00 Uhr",
         "topic": "Thema folgt"
       },
@@ -142,7 +142,7 @@
         "image": "/images/placedog/speaker-12.jpg",
         "imageAlt": "Podiumsdiskussion Kampagnen",
         "name": "Podiums&shy;diskussion",
-        "org": "ASS + PETA + Animal Equality",
+        "org": "tba.",
         "session": "17:30 Uhr",
         "topic": "Kampagnen?"
       },
@@ -173,8 +173,8 @@
       {
         "day": "sonntag",
         "image": "/images/placedog/speaker-04.jpg",
-        "imageAlt": "Michele Dressel",
-        "name": "Michele Dressel",
+        "imageAlt": "tba",
+        "name": "tba",
         "session": "14:30 Uhr",
         "topic": "Thema folgt"
       },
