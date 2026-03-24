@@ -1,3 +1,4 @@
+# manual-refresh: initial
 version: 2
 updates:
   - package-ecosystem: "npm"
