@@ -279,9 +279,9 @@
         {
           "name": "Kontakt",
           "org": "Fragen rund um Teilnahme und Ablauf - Questions regarding participation and the procedure",
-          "emailUser": "kongress",
-          "emailDomain": "vegan-in-leipzig",
-          "emailTld": "de"
+          "emailUser": "tierrechtskongress",
+          "emailDomain": "systemli",
+          "emailTld": "org"
         }
       ]
     },
