@@ -17,6 +17,7 @@
     "build:site": "ELEVENTY_OUTPUT_DIR=output/site run-s clean styles:prod eleventy:default --print-label",
     "build": "npm run build:site",
     "test:e2e": "playwright test",
+    "test:e2e:prod-smoke": "playwright test --config=playwright.prod.config.ts",
     "test:e2e:update": "playwright test --update-snapshots"
   },
   "repository": {

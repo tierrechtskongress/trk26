@@ -49,3 +49,39 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  post-deploy-production-smoke:
+    needs: deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run production smoke
+        env:
+          PLAYWRIGHT_PRODUCTION_BASE_URL: "https://tierrechtskongress.org"
+        run: npm run test:e2e:prod-smoke
+
+      - name: Upload production smoke report
+        if: failure()
+        uses: actions/upload-artifact@v6
+        with:
+          name: playwright-report-production-smoke
+          path: |
+            playwright-report-production-smoke
+            test-results
+          if-no-files-found: ignore
+          retention-days: 7

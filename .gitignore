@@ -74,6 +74,7 @@ skills-lock.json
 
 # Playwright outputs
 playwright-report/
+playwright-report-production-smoke/
 test-results/
 
 # deploy script

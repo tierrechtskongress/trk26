@@ -4,6 +4,7 @@ const useExistingPreview = process.env.PLAYWRIGHT_USE_EXISTING_SERVER === "1";
 
 export default defineConfig({
   testDir: "./tests/e2e",
+  testIgnore: /production-smoke\.spec\.ts/,
   snapshotPathTemplate: "{testDir}/{testFilePath}-snapshots/{arg}{ext}",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,

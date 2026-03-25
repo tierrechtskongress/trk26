@@ -20,6 +20,17 @@ export const localizedPages = [
 
 export const anchorIds = ["spenden", "programm", "rahmenprogramm", "fragen"] as const;
 export const assetResourceTypes = new Set(["stylesheet", "script", "image", "font"]);
+const transientExternalFailureStatuses = new Set([408, 425, 429, 500, 502, 503, 504]);
+
+type GotoOptions = {
+  retries?: number;
+  retryDelayMs?: number;
+};
+
+type ExternalLinkAuditResult = {
+  hardFailures: string[];
+  transientFailures: string[];
+};
 
 export function createPageIssueCollector(page: Page): PageIssueCollector {
   const consoleErrors: string[] = [];
@@ -40,10 +51,40 @@ export function createPageIssueCollector(page: Page): PageIssueCollector {
   return { consoleErrors, pageErrors };
 }
 
-export async function gotoAndWaitForPage(page: Page, path: string) {
-  const response = await page.goto(path, { waitUntil: "domcontentloaded" });
+export async function gotoAndWaitForPage(page: Page, path: string, options: GotoOptions = {}) {
+  const retries = options.retries ?? 0;
+  const retryDelayMs = options.retryDelayMs ?? 1_000;
+
+  let response = null;
+  let lastError: unknown;
+
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
+    try {
+      response = await page.goto(path, { waitUntil: "domcontentloaded" });
+
+      if (response?.ok()) {
+        break;
+      }
+
+      lastError = new Error(
+        response
+          ? `Expected "${path}" to load successfully, received ${response.status()}.`
+          : `Expected a navigation response for "${path}".`
+      );
+    } catch (error) {
+      lastError = error;
+    }
+
+    if (attempt < retries) {
+      await page.waitForTimeout(retryDelayMs * (attempt + 1));
+    }
+  }
+
   expect(response, `Expected a navigation response for "${path}".`).not.toBeNull();
-  expect(response?.ok(), `Expected "${path}" to load successfully.`).toBeTruthy();
+  expect(
+    response?.ok(),
+    lastError instanceof Error ? lastError.message : `Expected "${path}" to load successfully.`
+  ).toBeTruthy();
 
   await page.waitForLoadState("networkidle");
   await page.locator(".site-sticky-nav").waitFor({ state: "visible" });
@@ -116,6 +157,99 @@ export async function getRootRelativeAssetUrls(page: Page) {
 
     return Array.from(assetUrls).sort();
   });
+}
+
+export async function getExternalHttpUrls(page: Page) {
+  return page.evaluate(() => {
+    const urls = new Set<string>();
+
+    document.querySelectorAll<HTMLAnchorElement>('a[href]').forEach((anchor) => {
+      const href = anchor.getAttribute("href");
+
+      if (!href) {
+        return;
+      }
+
+      try {
+        const url = new URL(href, window.location.href);
+
+        if (!/^https?:$/.test(url.protocol)) {
+          return;
+        }
+
+        if (url.origin === window.location.origin) {
+          return;
+        }
+
+        urls.add(url.toString());
+      } catch {
+        // Ignore malformed href values and let the browser render what it can.
+      }
+    });
+
+    return Array.from(urls).sort();
+  });
+}
+
+export function isTransientExternalFailureStatus(status: number) {
+  return transientExternalFailureStatuses.has(status);
+}
+
+export async function auditExternalUrls(
+  fetchUrl: (url: string) => Promise<{ ok: boolean; status: number; statusText: string }>,
+  urls: string[],
+  options: { retries?: number; retryDelayMs?: number } = {}
+): Promise<ExternalLinkAuditResult> {
+  const retries = options.retries ?? 2;
+  const retryDelayMs = options.retryDelayMs ?? 750;
+  const hardFailures: string[] = [];
+  const transientFailures: string[] = [];
+
+  for (const url of urls) {
+    let lastStatus = 0;
+    let lastStatusText = "No response";
+    let lastError: unknown;
+    let lastWasTransient = false;
+    let succeeded = false;
+
+    for (let attempt = 0; attempt <= retries; attempt += 1) {
+      try {
+        const response = await fetchUrl(url);
+
+        lastStatus = response.status;
+        lastStatusText = response.statusText;
+
+        if (response.ok) {
+          succeeded = true;
+          break;
+        }
+
+        lastWasTransient = isTransientExternalFailureStatus(response.status);
+      } catch (error) {
+        lastError = error;
+        lastStatusText = error instanceof Error ? error.message : String(error);
+        lastWasTransient = true;
+      }
+
+      if (attempt < retries) {
+        await new Promise((resolve) => setTimeout(resolve, retryDelayMs * (attempt + 1)));
+      }
+    }
+
+    if (succeeded) {
+      continue;
+    }
+
+    const detail = `${lastStatus || "ERR"} ${lastStatusText} ${url}`;
+
+    if (lastWasTransient) {
+      transientFailures.push(detail);
+    } else {
+      hardFailures.push(detail);
+    }
+  }
+
+  return { hardFailures, transientFailures };
 }
 
 export async function getHeaderClip(page: Page) {
