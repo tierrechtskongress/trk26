@@ -1,4 +1,4 @@
-# manual-refresh: 2026-03-25T00:04:30Z (test)
+# manual-refresh: 2026-03-25T01:47:09Z (manual workflow_dispatch)
 version: 2
 updates:
   - package-ecosystem: "npm"
