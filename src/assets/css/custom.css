@@ -258,7 +258,7 @@ summary,
   transform: translateY(-1px);
 }
 
-.social-link .fab {
+.social-link :is(.fab, .fas) {
   font-size: 1rem;
   line-height: 1;
 }
@@ -1077,7 +1077,7 @@ details[open] summary::after {
   .nav-meta {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto minmax(0, 1fr);
+    grid-template-columns: auto auto auto minmax(0, 1fr);
     align-items: stretch;
     gap: 0.5rem;
     margin-left: 0;

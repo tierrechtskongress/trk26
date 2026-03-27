@@ -50,7 +50,7 @@ layout: layouts/base.njk
         </details>
         {% endfor %}
     </div>
-    <div class="team-column">
+    <div id="contact" class="team-column anchor-section">
         {% for member in congress.faq.team %}
         {{ teamMember(member, ui) }}
         {% endfor %}
