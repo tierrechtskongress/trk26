@@ -7,7 +7,7 @@
  "watchexps": [
     "src/assets/sass/**/*.scss # npm run styles:dev # reloadcss",
     "output/site/**/*.html",
-    "output/site/assets/css/**/*.css # reloadcss",
+    "output/site/assets/css/**/*.css # # reloadcss",
     "output/site/assets/js/**/*.js"
   ],
  "http2": false,

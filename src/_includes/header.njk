@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" aria-label="{{ title }}">
     <div class="hero-media">
         <img src="{% if '://' in url_mainfill %}{{ url_mainfill }}{% else %}{{ url_mainfill | url }}{% endif %}" alt="{{ title }} {{ hero.imageAltSuffix }}" />
     </div>

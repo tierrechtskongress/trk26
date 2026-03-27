@@ -9,10 +9,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: 1,
   workers: 1,
-  reporter: [
-    ["list"],
-    ["html", { open: "never", outputFolder: "playwright-report-production-smoke" }]
-  ],
+  reporter: [["list"], ["html", { open: "never", outputFolder: "playwright-report-production-smoke" }]],
   expect: {
     timeout: 10_000
   },

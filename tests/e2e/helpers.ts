@@ -163,7 +163,7 @@ export async function getExternalHttpUrls(page: Page) {
   return page.evaluate(() => {
     const urls = new Set<string>();
 
-    document.querySelectorAll<HTMLAnchorElement>('a[href]').forEach((anchor) => {
+    document.querySelectorAll<HTMLAnchorElement>("a[href]").forEach((anchor) => {
       const href = anchor.getAttribute("href");
 
       if (!href) {

@@ -14,12 +14,20 @@
         </a>
         {% endfor %}
     </nav>
-    <div class="language-switcher" aria-label="{{ languageSwitcherLabel }}">
-        {% for item in languageItems %}
-        {% set isCurrent = item.code == currentLocale %}
-        <a class="language-switcher__link{% if isCurrent %} is-current{% endif %}" href="{{ item.href | url }}" lang="{{ item.code }}"{% if isCurrent %} aria-current="page"{% endif %}>
-            {{ item.label }}
+    <div class="nav-meta">
+        <a class="social-link" href="https://www.instagram.com/tierrechtskongressleipzig/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <span class="fab fa-instagram" aria-hidden="true"></span>
         </a>
-        {% endfor %}
+        <a class="social-link" href="https://github.com/tierrechtskongress/trk26" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <span class="fab fa-github" aria-hidden="true"></span>
+        </a>
+        <div class="language-switcher" aria-label="{{ languageSwitcherLabel }}">
+            {% for item in languageItems %}
+            {% set isCurrent = item.code == currentLocale %}
+            <a class="language-switcher__link{% if isCurrent %} is-current{% endif %}" href="{{ item.href | url }}" lang="{{ item.code }}"{% if isCurrent %} aria-current="page"{% endif %}>
+                {{ item.label }}
+            </a>
+            {% endfor %}
+        </div>
     </div>
 </div>

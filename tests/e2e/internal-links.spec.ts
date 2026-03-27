@@ -52,14 +52,12 @@ for (const localizedPage of localizedPages) {
           metrics!.targetTop,
           `Expected ${hash} to sit below the sticky nav after jumping.`
         ).toBeGreaterThanOrEqual(metrics!.stickyBottom - 8);
-        expect(
-          metrics!.targetTop,
-          `Expected ${hash} to be visible after jumping.`
-        ).toBeLessThan(metrics!.viewportHeight);
-        expect(
-          metrics!.targetBottom,
-          `Expected ${hash} to have visible content after jumping.`
-        ).toBeGreaterThan(metrics!.stickyBottom);
+        expect(metrics!.targetTop, `Expected ${hash} to be visible after jumping.`).toBeLessThan(
+          metrics!.viewportHeight
+        );
+        expect(metrics!.targetBottom, `Expected ${hash} to have visible content after jumping.`).toBeGreaterThan(
+          metrics!.stickyBottom
+        );
 
         await expect(link).toHaveClass(/is-active/);
       }

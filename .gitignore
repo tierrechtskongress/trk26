@@ -68,10 +68,6 @@ src/_site/
 # macOS
 .DS_Store
 
-# local agent tooling
-.agents/
-skills-lock.json
-
 # Playwright outputs
 playwright-report/
 playwright-report-production-smoke/

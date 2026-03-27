@@ -21,6 +21,23 @@
     return stickyNav ? stickyNav.offsetHeight + 24 : 24;
   }
 
+  function smoothScrollTo(targetY, duration) {
+    const startY = window.scrollY;
+    const diff = targetY - startY;
+    let startTime = null;
+
+    function step(time) {
+      if (!startTime) startTime = time;
+      const elapsed = time - startTime;
+      const t = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - t, 3);
+      window.scrollTo(0, startY + diff * ease);
+      if (t < 1) requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+
   function scrollToHash(hash, behavior = prefersReducedMotion ? "auto" : "smooth") {
     if (!hash || hash === "#") {
       return false;
@@ -32,12 +49,13 @@
       return false;
     }
 
-    const top = window.scrollY + target.getBoundingClientRect().top - getScrollOffset();
+    const top = Math.max(window.scrollY + target.getBoundingClientRect().top - getScrollOffset(), 0);
 
-    window.scrollTo({
-      top: Math.max(top, 0),
-      behavior
-    });
+    if (behavior === "auto" || prefersReducedMotion) {
+      window.scrollTo({ top, behavior: "auto" });
+    } else {
+      smoothScrollTo(top, 400);
+    }
 
     return true;
   }

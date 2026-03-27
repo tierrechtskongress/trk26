@@ -1,11 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-import {
-  createPageIssueCollector,
-  expectNoRuntimeErrors,
-  gotoAndWaitForPage,
-  localizedPages
-} from "./helpers";
+import { createPageIssueCollector, expectNoRuntimeErrors, gotoAndWaitForPage, localizedPages } from "./helpers";
 
 for (const localizedPage of localizedPages) {
   test.describe(`${localizedPage.locale} production smoke`, () => {

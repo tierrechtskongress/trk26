@@ -16,7 +16,7 @@
     {% endif %}
     <div class="info-content">
         {% if section.title %}
-        <h2>{{ section.title | cmsInline | safe }}</h2>
+        <h3>{{ section.title | cmsInline | safe }}</h3>
         {% endif %}
         {% if section.eyebrow %}
         <strong>{{ section.eyebrow | cmsInline | safe }}</strong>
@@ -61,7 +61,7 @@
 
 {% macro sectionBanner(title) %}
 <div class="generic-section">
-    <h1><strong>{{ title | cmsInline | safe }}</strong></h1>
+    <h2><strong>{{ title | cmsInline | safe }}</strong></h2>
 </div>
 {% endmacro %}
 

@@ -3,7 +3,7 @@
     <head>
         <title>{{ title }} | {{ siteName }}</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="alternate" hreflang="de" href="{{ '/' | url }}" />
         <link rel="alternate" hreflang="en" href="{{ '/en/' | url }}" />
         <link rel="stylesheet" href="{{ '/assets/css/fontawesome-all.min.css' | url }}" />
@@ -12,9 +12,9 @@
     </head>
     <body class="is-preload{% if bodyClass %} {{ bodyClass }}{% endif %}">
         <div id="wrapper">
-            <div class="site-sticky-nav">
+            <header class="site-sticky-nav">
                 {% include 'navigation.njk' %}
-            </div>
+            </header>
             {% include 'header.njk' %}
 
             <main id="main">

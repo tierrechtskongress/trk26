@@ -15,6 +15,20 @@ npm run dev
 
 The site is then available at `http://localhost:4000/`.
 
+To mirror the GitHub CI checks before you push, run:
+
+```bash
+npm run check:ci
+```
+
+If you want that to happen automatically on every commit, install the repo hook once per clone:
+
+```bash
+npm run hooks:install
+```
+
+That enables the versioned [`pre-commit` hook](.githooks/pre-commit), which runs Prettier, the production build, and the full Playwright suite before the commit is created.
+
 ## Build
 
 Build the site into `output/site/`:

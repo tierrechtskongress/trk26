@@ -27,22 +27,19 @@ test.describe("external link audit", () => {
     const urls = Array.from(externalUrls).sort();
     expect(urls.length, "Expected at least one rendered external link to audit.").toBeGreaterThan(0);
 
-    const result = await auditExternalUrls(
-      async (url) => {
-        const response = await request.get(url, {
-          failOnStatusCode: false,
-          maxRedirects: 10,
-          timeout: 15_000
-        });
+    const result = await auditExternalUrls(async (url) => {
+      const response = await request.get(url, {
+        failOnStatusCode: false,
+        maxRedirects: 10,
+        timeout: 15_000
+      });
 
-        return {
-          ok: response.ok(),
-          status: response.status(),
-          statusText: response.statusText()
-        };
-      },
-      urls
-    );
+      return {
+        ok: response.ok(),
+        status: response.status(),
+        statusText: response.statusText()
+      };
+    }, urls);
 
     if (result.transientFailures.length > 0) {
       await testInfo.attach("external-link-transient-failures.txt", {
