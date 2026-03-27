@@ -101,7 +101,6 @@ h4,
 h5,
 h6,
 .hero-jumpnav a,
-.hero-kicker,
 .label,
 .badge-opt,
 summary,
@@ -318,21 +317,6 @@ summary,
     pointer-events: none;
 }
 
-.hero-kicker {
-    display: inline-block;
-    margin: 0 0 1rem;
-    padding: 0.45rem 0.9rem 0.35rem;
-    background: var(--rust);
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: 700;
-    font-style: italic;
-    letter-spacing: 0.08em;
-    text-transform: none;
-    position: relative;
-    z-index: 1;
-}
-
 .hero-copy h1 {
     margin: 0;
     color: var(--rust);
@@ -345,10 +329,6 @@ summary,
     max-width: 12ch;
     position: relative;
     z-index: 1;
-}
-
-.hero-subtitle {
-    display: none;
 }
 
 .info-line {
@@ -882,11 +862,6 @@ details[open] summary::after {
     line-height: 1.55;
 }
 
-.stats-container,
-.stat-card {
-    display: none;
-}
-
 @media (max-width: 980px) {
     .site-nav-shell {
         gap: 0.9rem;
@@ -1069,11 +1044,6 @@ details[open] summary::after {
         padding: 2.7rem 1.3rem 1.7rem 1rem;
     }
 
-    .hero-kicker {
-        margin-bottom: 0.7rem;
-        font-size: 0.74rem;
-    }
-
     .hero-copy h1 {
         font-size: clamp(1.85rem, 10vw, 2.85rem);
         line-height: 0.98;
@@ -1244,12 +1214,6 @@ body.variant-one .hero-copy h1 {
     text-transform: uppercase;
     letter-spacing: -0.03em;
     font-size: clamp(2.6rem, 9vw, 6.8rem);
-}
-
-body.variant-one .hero-kicker {
-    background: #111;
-    color: #fff;
-    border: 2px solid #fff;
 }
 
 body.variant-one .speaker-image img {

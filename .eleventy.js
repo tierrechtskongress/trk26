@@ -30,7 +30,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/assets/webfonts': 'assets/webfonts' });
   eleventyConfig.addPassthroughCopy('src/assets/css/custom.css');
   eleventyConfig.addPassthroughCopy('src/assets/css/fontawesome-all.min.css');
-  eleventyConfig.addPassthroughCopy('src/assets/css/images');
   eleventyConfig.addPassthroughCopy('src/assets/fonts');
 
   eleventyConfig.addWatchTarget("src/assets/css/");

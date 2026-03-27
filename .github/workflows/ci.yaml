@@ -6,12 +6,17 @@ on:
     branches: ["main"]
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
@@ -20,7 +25,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: "24"
+          node-version-file: ".nvmrc"
           cache: "npm"
 
       - name: Install dependencies
@@ -37,6 +42,16 @@ jobs:
       - name: Run Playwright suite
         run: npm run test:e2e
 
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: output/site
+
       - name: Upload Playwright report
         if: failure()
         uses: actions/upload-artifact@v7
@@ -44,6 +59,62 @@ jobs:
           name: playwright-report
           path: |
             playwright-report
+            test-results
+          if-no-files-found: ignore
+          retention-days: 7
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  post-deploy-production-smoke:
+    if: github.ref == 'refs/heads/main' && needs.deploy.result == 'success'
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run production smoke
+        env:
+          PLAYWRIGHT_PRODUCTION_BASE_URL: "https://tierrechtskongress.org"
+        run: npm run test:e2e:prod-smoke
+
+      - name: Upload production smoke report
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-report-production-smoke
+          path: |
+            playwright-report-production-smoke
             test-results
           if-no-files-found: ignore
           retention-days: 7

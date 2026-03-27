@@ -21,9 +21,6 @@ content:
         label: Hero Title
         type: string
         description: Use &shy; to add optional soft hyphenation for long words.
-      - name: subtitle
-        label: Subtitle
-        type: string
       - name: siteName
         label: Site Name
         type: string
@@ -31,9 +28,6 @@ content:
         label: Hero Settings
         type: object
         fields:
-          - name: kicker
-            label: Kicker
-            type: string
           - name: imageAltSuffix
             label: Hero Image Alt Suffix
             type: string

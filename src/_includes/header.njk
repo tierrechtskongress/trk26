@@ -9,7 +9,9 @@
         <div class="info-line hero-info-line">
             {% for fact in congress.quickFacts %}
             <div class="icon">
+                {% if fact.icon %}
                 <span class="fact-icon fa-solid fa-{{ fact.icon }}" aria-hidden="true"></span>
+                {% endif %}
                 <div class="fact-copy">
                     <span class="label">{{ fact.label | cmsInline | safe }}</span>
                     {% if fact.href %}

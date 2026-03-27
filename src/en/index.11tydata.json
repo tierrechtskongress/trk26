@@ -1,12 +1,10 @@
 {
   "title": "Leipzig Animal Rights Congress 2026",
   "displayTitle": "Leipzig Animal Rights Congress 2026",
-  "subtitle": "23-24 May 2026 at Ostwache in Leipzig",
   "siteName": "Leipzig Animal Rights Congress",
   "url_mainfill": "/images/hero/header.png",
   "bodyClass": "variant-one",
   "hero": {
-    "kicker": "Option 1 · Poster Brutalism",
     "imageAltSuffix": "Header image"
   },
   "navigation": {

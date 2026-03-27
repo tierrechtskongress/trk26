@@ -7,7 +7,7 @@
 <div class="site-nav-shell">
     <nav class="hero-jumpnav" aria-label="{{ navigation.ariaLabel }}">
         {% for item in navigation.items %}
-        <a class="scrolly" href="{{ item.href }}" aria-label="{{ item.ariaLabel }}">
+        <a href="{{ item.href }}" aria-label="{{ item.ariaLabel }}">
             <span class="nav-icon fas fa-{{ item.icon }}" aria-hidden="true"></span>
             <span class="nav-label">{{ item.label }}</span>
             <span class="nav-short" aria-hidden="true">{{ item.shortLabel }}</span>

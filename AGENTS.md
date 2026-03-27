@@ -6,6 +6,7 @@ This file is the single source of truth for repository-specific working rules. I
 
 - This repository is a static 11ty site with no backend and no infrastructure concerns.
 - Use the existing build and preview workflows instead of introducing new toolchains.
+- Treat `.nvmrc` as the authoritative Node.js version for the repo and keep local tooling, CI, and any secondary version files aligned with it.
 - Keep changes small, traceable, and close to established 11ty conventions.
 - Work mobile-first and always check layout changes for small viewports.
 - After relevant site changes, refresh `output/site` so preview and deployment stay in sync.
@@ -20,6 +21,7 @@ This file is the single source of truth for repository-specific working rules. I
 - Repeated content blocks should be modeled as structured arrays or objects, not HTML strings.
 - Only store freeform HTML in data when the alternative structure would be disproportionately complex.
 - Keep `.pages.yml` aligned with the current `src/index.11tydata.json` structure so Pages CMS remains usable.
+- Treat `.pages.yml` as a curated editing surface for Pages CMS; it should stay aligned with the live content model, but it does not need to expose every field from `*.11tydata.json` one-to-one.
 
 ## Current Project Pattern
 

@@ -1,239 +1,174 @@
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+(() => {
+  const body = document.body;
+  const stickyNav = document.querySelector(".site-sticky-nav");
+  const jumpNavLinks = Array.from(document.querySelectorAll('.site-sticky-nav .hero-jumpnav a[href^="#"]'));
+  const anchorLinks = Array.from(document.querySelectorAll('a[href^="#"]'));
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-(function($) {
+  window.addEventListener("load", () => {
+    window.setTimeout(() => {
+      body.classList.remove("is-preload");
+    }, 100);
 
-	var	$window = $(window),
-		$body = $('body'),
-		$main = $('#main');
+    if (window.location.hash) {
+      window.setTimeout(() => {
+        scrollToHash(window.location.hash, "auto");
+      }, 0);
+    }
+  });
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ]
-		});
+  function getScrollOffset() {
+    return stickyNav ? stickyNav.offsetHeight + 24 : 24;
+  }
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+  function scrollToHash(hash, behavior = prefersReducedMotion ? "auto" : "smooth") {
+    if (!hash || hash === "#") {
+      return false;
+    }
 
-	// Nav.
-		var $nav = $('#nav');
+    const target = document.querySelector(hash);
 
-		if ($nav.length > 0) {
+    if (!target) {
+      return false;
+    }
 
-			// Shrink effect.
-				$main
-					.scrollex({
-						mode: 'top',
-						enter: function() {
-							$nav.addClass('alt');
-						},
-						leave: function() {
-							$nav.removeClass('alt');
-						},
-					});
+    const top = window.scrollY + target.getBoundingClientRect().top - getScrollOffset();
 
-			// Links.
-				var $nav_a = $nav.find('a');
+    window.scrollTo({
+      top: Math.max(top, 0),
+      behavior
+    });
 
-				$nav_a
-					.scrolly({
-						speed: 300,
-						offset: function() { return $nav.height(); }
-					})
-					.on('click', function() {
+    return true;
+  }
 
-						var $this = $(this);
+  let scheduleActiveLinkUpdate = () => {};
 
-						// External link? Bail.
-							if ($this.attr('href').charAt(0) != '#')
-								return;
+  anchorLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetHash = link.getAttribute("href");
 
-						// Deactivate all links.
-							$nav_a
-								.removeClass('active')
-								.removeClass('active-locked');
+      if (!targetHash || targetHash.charAt(0) !== "#") {
+        return;
+      }
 
-						// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-							$this
-								.addClass('active')
-								.addClass('active-locked');
+      if (!document.querySelector(targetHash)) {
+        return;
+      }
 
-					})
-					.each(function() {
+      event.preventDefault();
 
-						var	$this = $(this),
-							id = $this.attr('href'),
-							$section = $(id);
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, document.title, targetHash);
+      } else {
+        window.location.hash = targetHash;
+      }
 
-						// No section for this link? Bail.
-							if ($section.length < 1)
-								return;
+      if (jumpNavLinks.includes(link)) {
+        handleJumpNavClick(targetHash);
+      }
 
-						// Scrollex.
-							$section.scrollex({
-								mode: 'middle',
-								initialize: function() {
+      scrollToHash(targetHash);
+    });
+  });
 
-									// Deactivate section.
-										if (browser.canUse('transition'))
-											$section.addClass('inactive');
+  if (!stickyNav || jumpNavLinks.length === 0) {
+    return;
+  }
 
-								},
-								enter: function() {
+  const sections = jumpNavLinks
+    .map((link) => {
+      const id = link.getAttribute("href");
+      const section = id ? document.querySelector(id) : null;
 
-									// Activate section.
-										$section.removeClass('inactive');
+      if (!section) {
+        return null;
+      }
 
-									// No locked links? Deactivate all links and activate this section's one.
-										if ($nav_a.filter('.active-locked').length == 0) {
+      return {
+        id,
+        link,
+        section
+      };
+    })
+    .filter(Boolean);
 
-											$nav_a.removeClass('active');
-											$this.addClass('active');
+  if (sections.length === 0) {
+    return;
+  }
 
-										}
+  let activeId = null;
+  let pendingId = null;
+  let activeLinkTimeout = null;
+  let scrollLockUntil = 0;
 
-									// Otherwise, if this section's link is the one that's locked, unlock it.
-										else if ($this.hasClass('active-locked'))
-											$this.removeClass('active-locked');
+  function setActiveLink(id) {
+    activeId = id;
+    jumpNavLinks.forEach((link) => {
+      link.classList.toggle("is-active", link.getAttribute("href") === id);
+    });
+  }
 
-								}
-							});
+  function getCurrentSectionId() {
+    const marker = window.scrollY + stickyNav.offsetHeight + 28;
+    let currentId = sections[0].id;
 
-					});
+    sections.forEach((item) => {
+      if (item.section.offsetTop <= marker) {
+        currentId = item.id;
+      }
+    });
 
-		}
+    return currentId;
+  }
 
-	// Scrolly.
-		$('.scrolly').scrolly({
-			speed: 300,
-			offset: function() {
-				var stickyNav = document.querySelector('.site-sticky-nav');
-				return stickyNav ? stickyNav.offsetHeight + 24 : 24;
-			}
-		});
+  scheduleActiveLinkUpdate = () => {
+    if (Date.now() < scrollLockUntil) {
+      return;
+    }
 
-	// Sticky nav active section state.
-		(function() {
+    const nextId = getCurrentSectionId();
 
-			var stickyNav = document.querySelector('.site-sticky-nav');
-			var navLinks = Array.from(document.querySelectorAll('.site-sticky-nav .hero-jumpnav a[href^="#"]'));
+    if (nextId === activeId) {
+      pendingId = null;
+      if (activeLinkTimeout) {
+        window.clearTimeout(activeLinkTimeout);
+        activeLinkTimeout = null;
+      }
+      return;
+    }
 
-			if (!stickyNav || navLinks.length === 0)
-				return;
+    if (pendingId === nextId && activeLinkTimeout) {
+      return;
+    }
 
-			var sections = navLinks
-				.map(function(link) {
-					var id = link.getAttribute('href');
-					var section = id ? document.querySelector(id) : null;
+    pendingId = nextId;
 
-					if (!section)
-						return null;
+    if (activeLinkTimeout) {
+      window.clearTimeout(activeLinkTimeout);
+    }
 
-					return {
-						id: id,
-						link: link,
-						section: section
-					};
-				})
-				.filter(Boolean);
+    activeLinkTimeout = window.setTimeout(() => {
+      setActiveLink(nextId);
+      pendingId = null;
+      activeLinkTimeout = null;
+    }, 120);
+  };
 
-			if (sections.length === 0)
-				return;
+  function handleJumpNavClick(targetHash) {
+    if (activeLinkTimeout) {
+      window.clearTimeout(activeLinkTimeout);
+      activeLinkTimeout = null;
+    }
 
-			var activeId = null;
-			var pendingId = null;
-			var activeLinkTimeout = null;
-			var scrollLockUntil = 0;
+    scrollLockUntil = Date.now() + 450;
+    pendingId = null;
+    setActiveLink(targetHash);
+    window.setTimeout(scheduleActiveLinkUpdate, 470);
+  }
 
-			var setActiveLink = function(id) {
-				activeId = id;
-				navLinks.forEach(function(link) {
-					link.classList.toggle('is-active', link.getAttribute('href') === id);
-				});
-			};
-
-			var getCurrentSectionId = function() {
-				var marker = window.scrollY + stickyNav.offsetHeight + 28;
-				var currentId = sections[0].id;
-
-				sections.forEach(function(item) {
-					if (item.section.offsetTop <= marker)
-						currentId = item.id;
-				});
-
-				return currentId;
-			};
-
-			var scheduleActiveLinkUpdate = function() {
-				if (Date.now() < scrollLockUntil)
-					return;
-
-				var nextId = getCurrentSectionId();
-
-				if (nextId === activeId) {
-					pendingId = null;
-					if (activeLinkTimeout) {
-						window.clearTimeout(activeLinkTimeout);
-						activeLinkTimeout = null;
-					}
-					return;
-				}
-
-				if (pendingId === nextId && activeLinkTimeout)
-					return;
-
-				pendingId = nextId;
-
-				if (activeLinkTimeout)
-					window.clearTimeout(activeLinkTimeout);
-
-				activeLinkTimeout = window.setTimeout(function() {
-					setActiveLink(nextId);
-					pendingId = null;
-					activeLinkTimeout = null;
-				}, 120);
-			};
-
-			navLinks.forEach(function(link) {
-				link.addEventListener('click', function() {
-					var targetHash = link.getAttribute('href');
-
-					if (activeLinkTimeout) {
-						window.clearTimeout(activeLinkTimeout);
-						activeLinkTimeout = null;
-					}
-
-					if (targetHash && targetHash.charAt(0) === '#') {
-						if (window.history && window.history.replaceState)
-							window.history.replaceState(null, document.title, targetHash);
-						else
-							window.location.hash = targetHash;
-					}
-
-					scrollLockUntil = Date.now() + 450;
-					pendingId = null;
-					setActiveLink(targetHash);
-					window.setTimeout(scheduleActiveLinkUpdate, 470);
-				});
-			});
-
-			window.addEventListener('scroll', scheduleActiveLinkUpdate, { passive: true });
-			window.addEventListener('resize', scheduleActiveLinkUpdate);
-			window.addEventListener('load', scheduleActiveLinkUpdate);
-			setActiveLink(getCurrentSectionId());
-
-		})();
-
-})(jQuery);
+  setActiveLink(getCurrentSectionId());
+  window.addEventListener("scroll", scheduleActiveLinkUpdate, { passive: true });
+  window.addEventListener("resize", scheduleActiveLinkUpdate);
+  window.addEventListener("load", scheduleActiveLinkUpdate);
+})();
