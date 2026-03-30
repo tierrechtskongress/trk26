@@ -1,5 +1,7 @@
 output/
 node_modules/
+# Pages CMS does not preserve trailing newlines in Eleventy page data files.
+src/**/*.11tydata.json
 src/assets/css/fontawesome-all.min.css
 src/assets/sass/
 src/assets/webfonts/
