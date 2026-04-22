@@ -114,24 +114,18 @@
       },
       {
         "day": "samstag",
-        "image": "/images/placedog/speaker-10.jpg",
-        "imageAlt": "tba",
         "name": "tba",
         "session": "14:30 Uhr",
         "topic": "tba"
       },
       {
         "day": "samstag",
-        "image": "/images/placedog/speaker-11.jpg",
-        "imageAlt": "Tiphaine Lagarde",
         "name": "Tiphaine Lagarde",
         "session": "16:00 Uhr"
       },
       {
         "day": "samstag",
         "badge": "Podium",
-        "image": "/images/placedog/speaker-12.jpg",
-        "imageAlt": "Podiumsdiskussion Kampagnen",
         "name": "Podiums&shy;diskussion",
         "org": "tba.",
         "session": "17:30 Uhr",
@@ -139,8 +133,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-01.jpg",
-        "imageAlt": "Notpfote",
         "name": "Notpfote",
         "session": "10:00 Uhr",
         "topic": "Tierrettung aus Krisengebieten"
