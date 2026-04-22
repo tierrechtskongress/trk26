@@ -139,7 +139,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-02.jpg",
         "imageAlt": "Umweltbildungswerk",
         "name": "Umwelt&shy;bildungs&shy;werk",
         "session": "11:30 Uhr",
@@ -147,7 +146,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-03.jpg",
         "imageAlt": "Friedrich Mülln",
         "name": "Friedrich Mülln",
         "session": "13:00 Uhr",
@@ -155,7 +153,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-04.jpg",
         "imageAlt": "tba",
         "name": "tba",
         "session": "14:30 Uhr",
@@ -163,7 +160,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-05.jpg",
         "imageAlt": "Anna Schubert und Hendrik Hassel",
         "name": "Anna Schubert und Hendrik Hassel",
         "session": "16:00 Uhr"
@@ -171,7 +167,6 @@
       {
         "day": "sonntag",
         "badge": "Podium",
-        "image": "/images/placedog/speaker-06.jpg",
         "imageAlt": "Podiumsdiskussion Ziviler Ungehorsam",
         "name": "Podiums&shy;diskussion",
         "org": "tba.",
@@ -183,7 +178,6 @@
       "title": "Rahmen&shy;programm",
       "items": [
         {
-          "image": "/images/placedog/framework-01.jpg",
           "imageAlt": "Village",
           "title": "Village",
           "eyebrow": "Posterstand",
@@ -195,7 +189,6 @@
           ]
         },
         {
-          "image": "/images/placedog/framework-02-new.jpg",
           "imageAlt": "Gastro",
           "title": "Gastro",
           "eyebrow": "Essensstand",
