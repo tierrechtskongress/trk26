@@ -104,15 +104,10 @@
       },
       {
         "day": "samstag",
-        "image": "/images/placedog/speaker-08.jpg",
-        "imageAlt": "Hilal Sezgin",
-        "name": "Hilal Sezgin",
-        "session": "11:30",
-        "topic": "Animal ethics"
+        "session": "11:30"
       },
       {
         "day": "samstag",
-        "image": "/images/placedog/speaker-09.jpg",
         "imageAlt": "Marie Kolb and Josephine Götze",
         "name": "Marie Kolb & Josephine Götze",
         "session": "13:00",
@@ -120,15 +115,13 @@
       },
       {
         "day": "samstag",
-        "image": "/images/placedog/speaker-10.jpg",
-        "imageAlt": "Rike Schmitz",
-        "name": "Rike Schmitz",
+        "imageAlt": "Friederike Schmitz",
+        "name": "Friederike Schmitz",
         "session": "14:30",
-        "topic": "Animal Ethics"
+        "topic": "Animal Rights in times of crisis"
       },
       {
         "day": "samstag",
-        "image": "/images/placedog/speaker-11.jpg",
         "imageAlt": "Tiphaine Lagarde",
         "name": "Tiphaine Lagarde",
         "session": "16:00",
@@ -137,7 +130,6 @@
       {
         "day": "samstag",
         "badge": "Panel",
-        "image": "/images/placedog/speaker-12.jpg",
         "imageAlt": "Panel discussion on campaigns",
         "name": "Panel Discussion",
         "org": "tba.",
@@ -146,7 +138,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-01.jpg",
         "imageAlt": "Notpfote",
         "name": "Notpfote",
         "session": "10:00",
@@ -154,7 +145,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-02.jpg",
         "imageAlt": "Umweltbildungswerk",
         "name": "Umwelt&shy;bildungs&shy;werk",
         "session": "11:30",
@@ -162,7 +152,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-03.jpg",
         "imageAlt": "Friedrich Mülln",
         "name": "Friedrich Mülln",
         "session": "13:00",
@@ -170,7 +159,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-04.jpg",
         "imageAlt": "tba",
         "name": "tba",
         "session": "14:30",
@@ -178,7 +166,6 @@
       },
       {
         "day": "sonntag",
-        "image": "/images/placedog/speaker-05.jpg",
         "imageAlt": "Anna Schubert and Hendrik Hassel",
         "name": "Anna Schubert and Hendrik Hassel",
         "session": "16:00",
@@ -187,7 +174,6 @@
       {
         "day": "sonntag",
         "badge": "Panel",
-        "image": "/images/placedog/speaker-06.jpg",
         "imageAlt": "Panel discussion on civil disobedience",
         "name": "Panel Discussion",
         "org": "tba.",
@@ -199,7 +185,6 @@
       "title": "On Site",
       "items": [
         {
-          "image": "/images/placedog/framework-01.jpg",
           "imageAlt": "Village",
           "title": "Village",
           "eyebrow": "Info stands",
@@ -211,7 +196,6 @@
           ]
         },
         {
-          "image": "/images/placedog/framework-02-new.jpg",
           "imageAlt": "Catering",
           "title": "Catering",
           "eyebrow": "Food stand",
