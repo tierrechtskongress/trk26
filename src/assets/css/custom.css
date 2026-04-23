@@ -602,6 +602,10 @@ summary,
   overflow: hidden;
 }
 
+.speaker-card--text-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .speaker-status {
   margin-bottom: 0.55rem;
 }

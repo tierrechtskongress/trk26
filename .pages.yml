@@ -148,6 +148,7 @@ content:
               - name: image
                 label: Card Image
                 type: image
+                required: false
               - name: imageAlt
                 label: Image Alt
                 type: string
@@ -180,6 +181,7 @@ content:
                   - name: image
                     label: Image
                     type: image
+                    required: false
                   - name: imageAlt
                     label: Image Alt
                     type: string
