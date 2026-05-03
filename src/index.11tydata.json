@@ -96,9 +96,15 @@
       {
         "day": "samstag",
         "badge": "Eröffnung",
-        "imageAlt": "Intro TRK Team und Faba Konzepte",
-        "name": "Intro TRK Team und Faba Konzepte",
-        "session": "10:00 Uhr",
+        "imageAlt": "Intro TRK Team",
+        "name": "Intro TRK Team",
+        "session": "10:00 Uhr"
+      },
+      {
+        "day": "samstag",
+        "imageAlt": "Faba Konzepte",
+        "name": "Faba Konzepte",
+        "session": "10:30",
         "topic": "Schlachtindustrie.de - Ein Datenwerkzeug für die Bewegung"
       },
       {
