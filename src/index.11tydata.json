@@ -109,7 +109,8 @@
       },
       {
         "day": "samstag",
-        "name": "tba",
+        "imageAlt": "Anne Eck",
+        "name": "Anne Eck",
         "session": "11:30 Uhr",
         "topic": "tba"
       },
@@ -121,7 +122,8 @@
       },
       {
         "day": "samstag",
-        "name": "tba",
+        "imageAlt": "Friederike Schmitz",
+        "name": "Friederike Schmitz",
         "session": "14:30 Uhr",
         "topic": "tba"
       },
@@ -161,9 +163,9 @@
       },
       {
         "day": "sonntag",
-        "name": "TB Dresden / Verein gegen Tierfabriken",
+        "name": "Marie",
         "session": "14:30 Uhr",
-        "topic": "Anti-Jagd Strategien & Aktivismusformen "
+        "topic": "Wildtierjagd im Aufwind, Widerstand im Abseits Der wachsende Einfluss organisierter Jagdinteressen in Deutschland und internationale Impulse aus der Tierrechtsbewegung"
       },
       {
         "day": "sonntag",
