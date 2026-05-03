@@ -116,6 +116,12 @@
       },
       {
         "day": "samstag",
+        "imageAlt": "Hausmann",
+        "name": "Hausmann",
+        "session": "12:00 Uhr"
+      },
+      {
+        "day": "samstag",
         "name": "Marie Kolb & Josephine Götze",
         "session": "13:00 Uhr",
         "topic": "Warum Tierschutz nicht ausreicht, ein Appell für Tierrechte"
