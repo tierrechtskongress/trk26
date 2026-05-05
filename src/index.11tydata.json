@@ -112,13 +112,14 @@
         "imageAlt": "Anne Eck",
         "name": "Anne Eck",
         "session": "11:30 Uhr",
-        "topic": "tba"
+        "topic": "Was kann ich schon tun?"
       },
       {
         "day": "samstag",
-        "imageAlt": "Hausmann",
-        "name": "Hausmann",
-        "session": "12:00 Uhr"
+        "imageAlt": "Daniel Hausmann",
+        "name": "Daniel Hausmann",
+        "session": "12:00 Uhr",
+        "topic": "Biozyklisch-vegane Landwirtschaft"
       },
       {
         "day": "samstag",
