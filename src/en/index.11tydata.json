@@ -96,14 +96,30 @@
       {
         "day": "samstag",
         "badge": "Opening",
-        "imageAlt": "Animal Rights Congress Introduction & Faba Concepts",
-        "name": "Animal Rights Congress Introduction & Faba Concepts",
-        "session": "10:00",
+        "imageAlt": "Animal Rights Congress Introduction ",
+        "name": "Animal Rights Congress Introduction ",
+        "session": "10:00"
+      },
+      {
+        "day": "samstag",
+        "imageAlt": "Faba Concepts",
+        "name": "Faba Concepts",
+        "session": "10:30",
         "topic": "Schlachtindustrie.de - A data-tool for the movement"
       },
       {
         "day": "samstag",
-        "session": "11:30"
+        "imageAlt": "Anne Eck",
+        "name": "Anne Eck",
+        "session": "11:30",
+        "topic": "What can I do?"
+      },
+      {
+        "day": "samstag",
+        "imageAlt": "Daniel Hausmann",
+        "name": "Daniel Hausmann",
+        "session": "12:15",
+        "topic": "Biocyclic vegan agriculture"
       },
       {
         "day": "samstag",
