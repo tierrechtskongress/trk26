@@ -144,9 +144,9 @@
         "day": "samstag",
         "badge": "Podium",
         "name": "Podiums&shy;diskussion",
-        "org": "tba.",
+        "org": "PETA & FEF Campaigns",
         "session": "17:30 Uhr",
-        "topic": "Kampagnen"
+        "topic": "Input und Diskussion zu Kampagnen"
       },
       {
         "day": "sonntag",
@@ -183,11 +183,10 @@
       {
         "day": "sonntag",
         "badge": "Podium",
-        "imageAlt": "Podiumsdiskussion Ziviler Ungehorsam",
         "name": "Podiums&shy;diskussion",
-        "org": "tba.",
+        "org": "Gemeinsam gegen die Tierindustrie & Kollektiv Tierbefreiung Stuttgart",
         "session": "17:30 Uhr",
-        "topic": "Ziviler Ungehorsam"
+        "topic": "Podiumsdiskussion zu Zivilem Ungehorsam"
       }
     ],
     "framework": {
