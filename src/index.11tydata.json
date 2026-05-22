@@ -116,6 +116,12 @@
       },
       {
         "day": "samstag",
+        "name": "Mittagessen",
+        "session": "12:00",
+        "topic": "Ab 12 Uhr gib es leckere Küfa (Küche für alle) auf Spendenbasis"
+      },
+      {
+        "day": "samstag",
         "imageAlt": "Daniel Hausmann",
         "name": "Daniel Hausmann",
         "session": "12:15 Uhr",
