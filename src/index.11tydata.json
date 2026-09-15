@@ -1,6 +1,6 @@
 {
-  "title": "Tierrechtskongress Leipzig 2026",
-  "displayTitle": "Tierrechts&shy;kongress Leipzig 2026",
+  "title": "Tierrechtskongress Leipzig 2027",
+  "displayTitle": "Tierrechts&shy;kongress Leipzig 2027",
   "siteName": "Tierrechtskongress Leipzig",
   "url_mainfill": "/images/hero/header.png",
   "bodyClass": "variant-one",
@@ -102,16 +102,15 @@
       },
       {
         "day": "samstag",
-        "imageAlt": "Faba Konzepte",
-        "name": "Faba Konzepte",
+        "name": "tba",
         "session": "10:30",
-        "topic": "Schlachtindustrie.de - Ein Datenwerkzeug für die Bewegung"
+        "topic": "tba"
       },
       {
         "day": "samstag",
-        "name": "Liberation Education",
+        "name": "tba",
         "session": "11:30 Uhr",
-        "topic": "Tierbefreiuung und Antidiskriminierung"
+        "topic": "tba"
       },
       {
         "day": "samstag",
@@ -121,36 +120,34 @@
       },
       {
         "day": "samstag",
-        "imageAlt": "Daniel Hausmann",
-        "name": "Daniel Hausmann",
+        "name": "tba",
         "session": "12:15 Uhr",
-        "topic": "Biozyklisch-vegane Landwirtschaft"
+        "topic": "tba"
       },
       {
         "day": "samstag",
-        "name": "Marie Kolb & Josephine Götze",
+        "name": "tba",
         "session": "13:00 Uhr",
-        "topic": "Warum Tierschutz nicht ausreicht, ein Appell für Tierrechte"
+        "topic": "tba"
       },
       {
         "day": "samstag",
-        "imageAlt": "Friederike Schmitz",
-        "name": "Friederike Schmitz",
+        "name": "tba",
         "session": "14:30 Uhr",
-        "topic": "Tierrechte in Krisenzeiten"
+        "topic": "tba"
       },
       {
         "day": "samstag",
-        "name": "Tiphaine Lagarde",
+        "name": "tba",
         "session": "16:00 Uhr",
-        "topic": "Für eine konfrontative antispeziesistische Praxis: Der Einsatz direkter Aktionen bei 269 Libération Animale (Deutsch, Englisch, Französisch) "
+        "topic": "tba"
       },
       {
         "day": "samstag",
         "badge": "Podium",
-        "name": "Input und Diskussion zu Kampagnen",
+        "name": "tba",
         "session": "17:30 Uhr",
-        "topic": "mit Input von PETA und FEF Campaigns (Deutsch, Englisch)"
+        "topic": "tba"
       },
       {
         "name": "Abendessen",
@@ -159,16 +156,15 @@
       },
       {
         "day": "sonntag",
-        "name": "Notpfote",
+        "name": "tba",
         "session": "10:00 Uhr",
-        "topic": "Tierrettung aus Krisengebieten"
+        "topic": "tba"
       },
       {
         "day": "sonntag",
-        "imageAlt": "Umweltbildungswerk",
-        "name": "Umwelt&shy;bildungs&shy;werk",
+        "name": "tba",
         "session": "11:30 Uhr",
-        "topic": "Wie die Tierindustrie unseren Planeten zerstört"
+        "topic": "tba"
       },
       {
         "day": "sonntag",
@@ -178,36 +174,34 @@
       },
       {
         "day": "sonntag",
-        "name": "Umwelt&shy;bildungs&shy;werk",
+        "name": "tba",
         "session": "12:15",
-        "topic": "Tierethik-Workshops an Schulen"
+        "topic": "tba"
       },
       {
         "day": "sonntag",
-        "imageAlt": "Friedrich Mülln",
-        "name": "Friedrich Mülln",
+        "name": "tba",
         "session": "13:00 Uhr",
-        "topic": "Resilienz und Beständigkeit im Aktivismus & erfolgreiche Kampagnenarbeit"
+        "topic": "tba"
       },
       {
         "day": "sonntag",
-        "name": "Marie",
+        "name": "tba",
         "session": "14:30 Uhr",
-        "topic": "Wildtierjagd im Aufwind, Widerstand im Abseits Der wachsende Einfluss organisierter Jagdinteressen in Deutschland und internationale Impulse aus der Tierrechtsbewegung"
+        "topic": "tba"
       },
       {
         "day": "sonntag",
-        "imageAlt": "Anna Schubert und Hendrik Hassel",
-        "name": "Anna Schubert und Hendrik Hassel",
+        "name": "tba",
         "session": "16:00 Uhr",
-        "topic": "Rechtsbruch für das öffentliche Interesse (Deutsch, Englisch)"
+        "topic": "tba"
       },
       {
         "day": "sonntag",
         "badge": "Podium",
-        "name": "Podiumsdiskussion zu Zivilem Ungehorsam",
+        "name": "tba",
         "session": "17:30 Uhr",
-        "topic": "mit Gemeinsam gegen die Tierindustrie, Kollektiv Tierbefreiung Stuttgart, Neue Generation u.a. (Deutsch, Englisch)"
+        "topic": "tba"
       }
     ],
     "framework": {
