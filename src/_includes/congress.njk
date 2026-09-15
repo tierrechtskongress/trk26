@@ -1,67 +1,23 @@
 ---
 layout: layouts/base.njk
 ---
-{% from 'components/congress-macros.njk' import infoGrid, noteCard, sectionBanner, sectionDivider, speakerCard, teamMember %}
+{% from 'components/congress-macros.njk' import sectionDivider %}
+{% from 'components/scrolly-macros.njk' import scrolly %}
 <div class="page-shell">
 <div id="infos" class="anchor-section">
     {{ sectionDivider() }}
-    {{ infoGrid(congress.intro, ui) }}
+    {% set steps = site.congress.introScrolly %}
+    {{ scrolly(
+        steps,
+        [
+            "/images/hero/intro/hero1.jpg" | url,
+            "/images/hero/intro/hero2.jpg" | url,
+            "/images/hero/intro/hero3.jpg" | url
+        ]
+    ) }}
 </div>
 
 <div id="spenden" class="support-section anchor-section">
     {% include 'donate.njk' %}
 </div>
-
-<div id="programm" class="anchor-section">
-{{ sectionBanner(congress.overview.title) }}
-
-<div class="program-days-grid">
-{% for day in congress.overview.days %}
-<section class="program-day">
-    <h3>{{ day.label | cmsInline | safe }}</h3>
-    {% for speaker in congress.speakers %}
-    {% if speaker.day == day.key %}
-    {{ speakerCard(speaker, ui) }}
-    {% endif %}
-    {% endfor %}
-</section>
-{% endfor %}
-</div>
-</div>
-
-<div id="rahmenprogramm" class="anchor-section">
-{{ sectionBanner(congress.framework.title) }}
-{% for item in congress.framework.items %}
-{{ infoGrid(item, ui) }}
-{% endfor %}
-</div>
-
-<div id="fragen" class="anchor-section">
-{{ sectionBanner(congress.faq.title) }}
-
-<div class="team-faq-container">
-    <div class="faq-column">
-        {% for item in congress.faq.items %}
-        <details>
-            <summary>{{ item.question | cmsInline | safe }}</summary>
-            <div class="details-content">
-                {{ item.answer | cmsBlock | safe }}
-            </div>
-        </details>
-        {% endfor %}
-    </div>
-    <div id="contact" class="team-column anchor-section">
-        {% for member in congress.faq.team %}
-        {{ teamMember(member, ui) }}
-        {% endfor %}
-        {{ noteCard(congress.exclusion) }}
-    </div>
-</div>
-</div>
-
-<div id="impressum" class="anchor-section">
-{{ sectionBanner(congress.imprint.heading) }}
-{{ infoGrid(congress.imprint, ui) }}
-</div>
-
 </div>

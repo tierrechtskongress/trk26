@@ -1,0 +1,26 @@
+{% macro scrolly(steps, images) %}
+{% for step in steps %}
+{% if loop.first %}
+<div class="scrolly-step-card scrolly-intro-card">
+  {% if step.heading %}<h3>{{ step.heading| safe }}</h3>{% endif %}
+  <p>{{ step.text }}</p>
+</div>
+<div class="scrolly-stack">
+  <div class="scrolly-bg-column">
+    {% for img in images %}
+    <div class="scrolly-bg-image" style="background-image: url('{{ img }}');"></div>
+    {% endfor %}
+  </div>
+  <div class="scrolly-overlay-steps">
+{% else %}
+    <div class="scrolly-step-card">
+      {% if step.heading %}<h3>{{ step.heading| safe }}</h3>{% endif %}
+      <p>{{ step.text }}</p>
+    </div>
+{% endif %}
+{% if loop.last %}
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+{% endmacro %}

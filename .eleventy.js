@@ -1,6 +1,13 @@
 const MarkdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setDataDeepMerge(false);
+  eleventyConfig.addFilter("scrollySteps", function (items, introHeading, introText) {
+  const mapped = (items || []).map(function (item) {
+    return { heading: item.title, text: (item.paragraphs || []).join(" ") };
+  });
+  return [{ heading: introHeading, text: introText }].concat(mapped);
+});
   const pathPrefix = process.env.ELEVENTY_PATH_PREFIX || "/";
   const outputDir = process.env.ELEVENTY_OUTPUT_DIR || "output/site";
   const cmsMarkdown = new MarkdownIt({

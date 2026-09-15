@@ -5,8 +5,8 @@
     { "code": "en", "label": "EN", "href": "/en/" }
 ] %}
 <div class="site-nav-shell">
-    <nav class="hero-jumpnav" aria-label="{{ navigation.ariaLabel }}">
-        {% for item in navigation.items %}
+        <nav class="hero-jumpnav" aria-label="{{ site.navigation.ariaLabel }}">
+        {% for item in site.navigation.items %}
         <a href="{{ item.href }}" aria-label="{{ item.ariaLabel }}">
             <span class="nav-icon fas fa-{{ item.icon }}" aria-hidden="true"></span>
             <span class="nav-label">{{ item.label }}</span>

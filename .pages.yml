@@ -11,7 +11,7 @@ content:
   - name: site_de
     label: Site Content (DE)
     type: file
-    path: src/index.11tydata.json
+    path: src/_data/site.json
     format: json
     fields: &site_fields
       - name: title
@@ -116,6 +116,17 @@ content:
                 label: Paragraphs
                 type: text
                 list: true
+          - name: introScrolly
+            label: Intro Scroll Abschnitte
+            type: object
+            list: true
+            fields:
+              - name: heading
+                label: Überschrift
+                type: string
+              - name: text
+                label: Text
+                type: text
           - name: overview
             label: Program Overview
             type: object
@@ -173,6 +184,9 @@ content:
                 label: Section Title
                 type: string
                 description: Use &shy; to add optional soft hyphenation for long words.
+              - name: introText
+                label: Intro Text
+                type: text
               - name: items
                 label: Entries
                 type: object
@@ -195,6 +209,35 @@ content:
                     label: Paragraphs
                     type: text
                     list: true
+          - name: about
+            label: About Page
+            type: object
+            fields:
+              - name: title
+                label: Section Title
+                type: string
+              - name: mission
+                label: Mission Text
+                type: text
+                list: true
+              - name: team
+                label: Team Members
+                type: object
+                list: true
+                fields:
+                  - name: name
+                    label: Name
+                    type: string
+                  - name: role
+                    label: Rolle
+                    type: string
+                  - name: image
+                    label: Foto
+                    type: image
+                    required: false
+                  - name: imageAlt
+                    label: Bild Alt-Text
+                    type: string
           - name: faq
             label: FAQ Section
             type: object
@@ -266,6 +309,10 @@ content:
   - name: site_en
     label: Site Content (EN)
     type: file
-    path: src/en/index.11tydata.json
+    path: src/en/en.json
     format: json
-    fields: *site_fields
+    fields:
+    - name: site
+      label: Site content
+      type: object
+      fields: *site_fields

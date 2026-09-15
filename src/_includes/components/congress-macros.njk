@@ -32,17 +32,21 @@
 {% endmacro %}
 
 {% macro speakerCard(speaker, ui) %}
-<div class="speaker-card{% if not speaker.image %} speaker-card--text-only{% endif %}">
+<div class="speaker-card day-{{ speaker.day or 'other' }}{% if not speaker.image %} speaker-card--text-only{% endif %}">
     {% if speaker.image %}
     <div class="speaker-image">
         <img src="{{ speaker.image | url }}" alt="{{ speaker.imageAlt or speaker.name }}">
+        {% if speaker.badge %}
+        <span class="badge-opt badge-opt--overlay">{{ speaker.badge | cmsInline | safe }}</span>
+        {% endif %}
     </div>
     {% endif %}
     <div class="speaker-info">
-        {% if speaker.badge %}
+        {% if speaker.badge and not speaker.image%}
         <div class="speaker-status">
             <span class="badge-opt">{{ speaker.badge | cmsInline | safe }}</span>
         </div>
+
         {% endif %}
         <div class="speaker-header">
             {% if speaker.name %}

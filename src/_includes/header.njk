@@ -1,13 +1,13 @@
-<section class="hero" aria-label="{{ title }}">
+<section class="hero" aria-label="{{ site.title }}">
     <div class="hero-media">
-        <img src="{% if '://' in url_mainfill %}{{ url_mainfill }}{% else %}{{ url_mainfill | url }}{% endif %}" alt="{{ title }} {{ hero.imageAltSuffix }}" />
+        <img src="{% if '://' in site.url_mainfill %}{{ site.url_mainfill }}{% else %}{{ site.url_mainfill | url }}{% endif %}" alt="{{ site.title }} {{ site.hero.imageAltSuffix }}" />
     </div>
     <div class="hero-overlay">
         <div class="hero-copy">
-            <h1>{{ (displayTitle or title) | cmsInline | safe }}</h1>
+            <h1>{{ (site.displayTitle or site.title) | cmsInline | safe }}</h1>
         </div>
         <div class="info-line hero-info-line">
-            {% for fact in congress.quickFacts %}
+            {% for fact in site.congress.quickFacts %}
             <div class="icon">
                 {% if fact.icon %}
                 <span class="fact-icon fa-solid fa-{{ fact.icon }}" aria-hidden="true"></span>

@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+---
+{% from 'components/congress-macros.njk' import sectionBanner, infoGrid %}
+<div class="page-shell">
+<div id="impressum" class="anchor-section">
+{{ sectionBanner(site.congress.imprint.heading) }}
+{{ infoGrid(site.congress.imprint, site.ui) }}
+</div>
+</div>

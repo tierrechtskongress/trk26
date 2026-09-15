@@ -1,26 +1,27 @@
 /* Blue poster redesign aligned with the provided header artwork */
 :root {
-  --paper: #f6f7fb;
-  --paper-strong: #ffffff;
-  --paper-muted: #e9edff;
-  --ink: #28409a;
-  --ink-soft: #5668a7;
-  --ink-muted: #8995c0;
-  --rust: #3f5cff;
-  --rust-soft: #7a8eff;
-  --olive: #3150eb;
-  --olive-soft: #8392d7;
-  --line: rgba(63, 92, 255, 0.15);
-  --line-strong: rgba(63, 92, 255, 0.32);
-  --shadow-soft: 0 16px 38px rgba(70, 95, 214, 0.12);
+  --paper: #bb5d7b;
+  --paper-strong: #ffe8d6;
+  --paper-muted: #ffe8d6;
+  --ink: #502a02;
+  --ink-soft: #6F4E37;
+  --ink-muted: #8a8a8a;
+  --rust: #502a02;
+  --rust-soft: #ff9b9b;
+  --olive: #320d6b;
+  --olive-soft: #8fe0da;
+  --accent-yellow: #ffd93d;
+  --accent-purple: #a78bfa;
+  --line: rgba(45, 3, 91, 0.18);
+  --line-strong: rgba(61, 16, 104, 0.35);
+  --shadow-soft: 0 8px 24px rgba(255, 107, 107, 0.12);
   --content-width: 70rem;
   --reading-width: 44rem;
   --hero-overlay-width: 72rem;
-  --display-font: "Cabin Local", "Cabin", "Avenir Next", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
-  --ui-font: "Cabin Local", "Cabin", "Avenir Next", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
-  --body-font: "Cabin Local", "Cabin", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --display-font: "Quicksand", "Avenir Next", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+  --ui-font: "Quicksand", "Avenir Next", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+  --body-font: "Quicksand", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
 }
-
 html {
   scroll-behavior: auto;
   background: var(--paper);
@@ -592,18 +593,28 @@ summary,
 
 .speaker-card {
   position: relative;
-  display: grid;
-  grid-template-columns: 6.2rem minmax(0, 1fr);
-  gap: 0;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
   border: 1px solid var(--line-strong);
+  border-top: 4px solid var(--line-strong);
   background: var(--paper-strong);
   box-shadow: var(--shadow-soft);
   overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.speaker-card--text-only {
-  grid-template-columns: minmax(0, 1fr);
+.speaker-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(255, 107, 107, 0.18);
+}
+
+.speaker-card.day-samstag {
+  border-top-color: var(--rust);
+}
+
+.speaker-card.day-sonntag {
+  border-top-color: var(--olive);
 }
 
 .speaker-status {
@@ -612,18 +623,20 @@ summary,
 
 .badge-opt {
   display: inline-block;
-  padding: 0.18rem 0.5rem;
-  background: rgba(63, 92, 255, 0.1);
-  color: var(--rust);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: var(--rust);
+  color: #fff;
   font-family: var(--ui-font);
-  font-size: 0.66rem;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .speaker-image {
-  min-height: 100%;
+  width: 100%;
+  aspect-ratio: 4/3;
 }
 
 .speaker-image img {
@@ -1303,4 +1316,118 @@ body.variant-one .donation-cta a {
   body.variant-one .hero-jumpnav a {
     font-size: 0.62rem;
   }
+}
+.hero-copy,
+.info-line .icon,
+.donation-cta,
+.speaker-card,
+.info-content,
+.sidebar-note,
+details,
+.language-switcher,
+.social-link {
+  border-radius: 18px !important;
+  box-shadow: var(--shadow-soft) !important;
+}
+
+.social-link {
+  border-radius: 50% !important;
+}
+
+.donation-cta a,
+.hero-jumpnav a {
+  border-radius: 999px !important;
+}
+
+.info-label img,
+.speaker-image img {
+  border-radius: 14px !important;
+}
+.scrolly {
+  position: relative;
+  display: grid;
+}
+
+.scrolly-step-card {
+  width: min(90%, 60rem);
+  margin: 3rem auto;
+  padding: 2.4rem 3.2rem;
+  border-radius: 20px;
+  background: var(--paper-strong);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  z-index: 1;
+}
+
+.scrolly-step-card h3 {
+  margin: 0 0 0.8rem;
+  color: var(--rust);
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.scrolly-step-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.scrolly-stack {
+  position: relative;
+  width: min(90%, 60rem);
+  margin: 0 auto;
+}
+
+.scrolly-intro-card {
+  margin-bottom: 0;
+}
+
+.scrolly-bg-column {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  border-radius: 20px;
+  overflow:hidden;
+}
+
+.scrolly-bg-image {
+  flex: 1 1 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.scrolly-overlay-steps {
+  position: relative;
+  z-index: 1;
+  padding: 6rem 0;
+}
+.scrolly-overlay-steps .scrolly-step-card {
+  width: 100%;
+  margin: 0 0 6rem;
+}
+.scrolly-overlay-steps .scrolly-step-card:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .scrolly-step-card {
+    width: 100%;
+  }
+}
+#rahmenprogramm .scrolly-overlay-steps .scrolly-step-card:first-child {
+  margin-bottom: 9rem;
+  padding-bottom: 10rem;
+}
+.speaker-image {
+  position: relative;
+}
+
+.badge-opt--overlay {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

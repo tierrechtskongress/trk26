@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+---
+{% from 'components/scrolly-macros.njk' import scrolly %}
+{% set steps = site.congress.framework.items | scrollySteps(site.congress.framework.title, site.congress.framework.introText) %}
+<div class="page-shell">
+<div id="rahmenprogramm" class="anchor-section">
+    {{ scrolly(
+        steps,
+        [
+            "/images/hero/village/village1.jpg" | url,
+            "/images/hero/village/village2.jpg" | url
+        ]
+    ) }}
+</div>
+</div>

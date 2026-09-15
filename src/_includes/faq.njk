@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+---
+{% from 'components/congress-macros.njk' import sectionBanner, teamMember %}
+<div class="page-shell">
+<div id="fragen" class="anchor-section">
+{{ sectionBanner(site.congress.faq.title) }}
+
+<div class="team-faq-container">
+    <div class="faq-column">
+        {% for item in site.congress.faq.items %}
+        <details>
+            <summary>{{ item.question | cmsInline | safe }}</summary>
+            <div class="details-content">
+                {{ item.answer | cmsBlock | safe }}
+            </div>
+        </details>
+        {% endfor %}
+    </div>
+    <div id="contact" class="team-column anchor-section">
+        {% for member in site.congress.faq.team %}
+        {{ teamMember(member, site.ui) }}
+        {% endfor %}
+    </div>
+</div>
+</div>
+</div>
