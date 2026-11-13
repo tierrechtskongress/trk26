@@ -9,10 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (entry.isIntersecting) {
             var index = entry.target.getAttribute("data-scrolly-step-index");
             layers.forEach(function (layer) {
-              layer.classList.toggle(
-                "is-active",
-                layer.getAttribute("data-scrolly-bg-index") === index
-              );
+              layer.classList.toggle("is-active", layer.getAttribute("data-scrolly-bg-index") === index);
             });
           }
         });

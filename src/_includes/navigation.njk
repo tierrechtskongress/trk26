@@ -1,10 +1,19 @@
-{% set currentLocale = locale or 'de' %}
+{% set currentLocale = site.locale or 'de' %}
 {% set languageSwitcherLabel = 'Sprache wechseln' if currentLocale == 'de' else 'Change language' %}
 {% set languageItems = [
     { "code": "de", "label": "DE", "href": "/" },
     { "code": "en", "label": "EN", "href": "/en/" }
 ] %}
 <div class="site-nav-shell">
+        {% if currentLocale == 'en' %}
+        <a class="home-link" href="{{ '/en/' | url }}" aria-label="Back to homepage">
+            <i class="fa-solid fa-home" aria-hidden="true"></i>
+        </a>
+        {% else %}
+        <a class="home-link" href="{{ '/' | url }}" aria-label="Zur Startseite">
+            <i class="fa-solid fa-home" aria-hidden="true"></i>
+        </a>
+        {% endif %}
         <nav class="hero-jumpnav" aria-label="{{ site.navigation.ariaLabel }}">
         {% for item in site.navigation.items %}
         <a href="{{ item.href }}" aria-label="{{ item.ariaLabel }}">
@@ -15,7 +24,11 @@
         {% endfor %}
     </nav>
     <div class="nav-meta">
-        <a class="social-link" href="#contact" aria-label="{{ 'Zum Kontaktbereich' if currentLocale == 'de' else 'Jump to contact section' }}">
+        {% if currentLocale == 'en' %}
+        <a class="social-link" href="{{ '/en/faq/#contact' | url }}" aria-label="Jump to contact section">
+        {% else %}
+        <a class="social-link" href="{{ '/faq/#contact' | url }}" aria-label="Zum Kontaktbereich">
+        {% endif %}
             <span class="fas fa-envelope" aria-hidden="true"></span>
         </a>
         <a class="social-link" href="https://www.instagram.com/tierrechtskongressleipzig/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

@@ -2,9 +2,11 @@
 layout: layouts/base.njk
 ---
 {% from 'components/scrolly-macros.njk' import scrolly %}
-{% set steps = site.congress.framework.items | scrollySteps(site.congress.framework.title, site.congress.framework.introText) %}
+{% from 'components/congress-macros.njk' import sectionBanner %}
+{% set steps = site.congress.framework.items | scrollySteps("", site.congress.framework.introText) %}
 <div class="page-shell">
 <div id="rahmenprogramm" class="anchor-section">
+    {{ sectionBanner(site.congress.framework.title) }}
     {{ scrolly(
         steps,
         [

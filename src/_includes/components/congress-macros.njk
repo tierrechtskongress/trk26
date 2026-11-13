@@ -32,8 +32,8 @@
 {% endmacro %}
 
 {% macro speakerCard(speaker, ui) %}
-<div class="speaker-card day-{{ speaker.day or 'other' }}{% if not speaker.image %} speaker-card--text-only{% endif %}">
-    {% if speaker.image %}
+<div class="speaker-card day-{{ speaker.day or 'other' }}{% if not speaker.image %} speaker-card--text-only{% endif %}{% if speaker.compact %} speaker-card--compact{% endif %}">
+    {% if speaker.image and speaker.compact %}
     <div class="speaker-image">
         <img src="{{ speaker.image | url }}" alt="{{ speaker.imageAlt or speaker.name }}">
         {% if speaker.badge %}
@@ -42,13 +42,17 @@
     </div>
     {% endif %}
     <div class="speaker-info">
-        {% if speaker.badge and not speaker.image%}
+        {% if speaker.badge and not speaker.compact %}
         <div class="speaker-status">
             <span class="badge-opt">{{ speaker.badge | cmsInline | safe }}</span>
         </div>
-
         {% endif %}
         <div class="speaker-header">
+            {% if speaker.image and not speaker.compact %}
+            <div class="speaker-avatar">
+                <img src="{{ speaker.image | url }}" alt="{{ speaker.imageAlt or speaker.name }}">
+            </div>
+            {% endif %}
             {% if speaker.name %}
             <h3 class="speaker-name">{{ speaker.name | cmsInline | safe }}</h3>
             {% endif %}
@@ -62,7 +66,12 @@
         {% if speaker.org %}
         <span class="speaker-org">{{ speaker.org | cmsInline | safe }}</span>
         {% endif %}
+        {% if speaker.quote %}
+        <p class="speaker-quote">&ldquo;{{ speaker.quote | cmsInline | safe }}&rdquo;</p>
+        {% endif %}
+        {% if speaker.topic %}
         <p class="speaker-topic"><strong>{{ ui.speakerTopicLabel }}</strong> {{ speaker.topic | cmsInline | safe }}</p>
+        {% endif %}
     </div>
 </div>
 {% endmacro %}
@@ -93,6 +102,33 @@
             </span>
         </p>
         <p class="contact-note">{{ ui.emailHint | cmsInline | safe }}</p>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro aboutTeamMember(member) %}
+<div class="speaker-card about-team-member">
+    <div class="speaker-info">
+        <div class="speaker-header">
+            {% if member.image %}
+            <div class="speaker-avatar">
+                <img src="{{ member.image | url }}" alt="{{ member.imageAlt or member.name }}">
+            </div>
+            {% endif %}
+            {% if member.name %}
+            <h3 class="speaker-name">{{ member.name | cmsInline | safe }}</h3>
+            {% endif %}
+        </div>
+        {% if member.role %}
+        <span class="speaker-org">{{ member.role | cmsInline | safe }}</span>
+        {% endif %}
+        {% if member.quotes %}
+        {% for q in member.quotes %}
+        <p class="speaker-quote">&ldquo;{{ q.text | cmsInline | safe }}&rdquo;{% if q.source %}<span class="speaker-quote-source">{{ q.source | cmsInline | safe }}</span>{% endif %}</p>
+        {% endfor %}
+        {% elif member.quote %}
+        <p class="speaker-quote">&ldquo;{{ member.quote | cmsInline | safe }}&rdquo;</p>
+        {% endif %}
     </div>
 </div>
 {% endmacro %}

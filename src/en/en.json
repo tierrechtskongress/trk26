@@ -1,9 +1,9 @@
 {
   "site": {
-    "title": "Leipzig Animal Rights Congress 2026",
-    "displayTitle": "Leipzig Animal Rights Congress 2026",
+    "title": "Leipzig Animal Rights Congress 2027",
+    "displayTitle": "Leipzig Animal Rights Congress 2027",
     "siteName": "Leipzig Animal Rights Congress",
-    "url_mainfill": "/images/hero/header.png",
+    "url_mainfill": "/images/hero/header.jpg",
     "bodyClass": "",
     "hero": {
       "imageAltSuffix": "Header image"
@@ -31,6 +31,13 @@
           "icon": "star",
           "label": "On Site",
           "shortLabel": "On Site"
+        },
+        {
+          "href": "/en/workshops/",
+          "ariaLabel": "Workshops",
+          "icon": "chalkboard",
+          "label": "Workshops",
+          "shortLabel": "Workshops"
         },
         {
           "href": "/en/about/",
@@ -72,14 +79,14 @@
     "congress": {
       "donate": {
         "title": "Support us",
-        "text": "Your donation will help fund the venue, equipment, materials and on-site offerings for the conference.",
+        "text": "Your donation will help fund the venue, equipment, materials and on-site offerings for the conference.\n\n It isn't possible to donate online at the moment.",
         "ctaLabel": "Call for Donations",
-        "href": "https://spenden.twingle.de/transformation-fordern-e-v/tierrechtskongress/tw6983028ce7f5e/page"
+        "href": ""
       },
       "quickFacts": [
         {
           "label": "Time",
-          "value": "23-24 May 2026, 10am-7pm"
+          "value": "22-23 May 2027, 10am-7pm"
         },
         {
           "label": "Location",
@@ -102,11 +109,26 @@
         ]
       },
       "introScrolly": [
-        { "heading": "The Congress", "text": "On the weekend of 23–24 May 2026, the Animal Rights Congress Leipzig will take place at the Ostwache Leipzig. Unlike in 2021 and 2023, the event is no longer organised by vegan-in-leipzig, but by a team of volunteers from Leipzig's vegan and animal rights groups." },
-        { "heading": "The Topics", "text": "This year, numerous speakers will engage critically with different perspectives on animal liberation and animal rights work. Talks will cover animal ethics, animal law, animal rescue from crisis regions, leaving animal farming, anti-speciesist educational work, and other exciting topics. Panel discussions on campaigns and civil disobedience are also planned." },
-        { "heading": "The Goal", "text": "Alongside the talks, the congress will also offer time for informal exchange and follow-up discussions with the speakers. Its goal is to connect the animal rights movement and interested people, and to discuss shared challenges of activist practice." },
-        { "heading": "The Venue", "text": "The Ostwache is the former Ost fire station in Anger-Crottendorf – a listed site of around 3,800 square metres being developed into an open neighbourhood centre by an association since 2017. Alongside a large event space for up to 100 people in the former vehicle hall, there's a courtyard with an urban garden. Accessibility is one of the central goals of the ongoing renovation." },
-        { "heading": "Get Involved", "text": "The congress relies on people who pitch in – with setup and teardown, at the entrance, with awareness, technical support, or translation. Whether for a few hours or the whole day: if you'd like to help out, just send us an email." }
+        {
+          "heading": "The Congress",
+          "text": "The Leipzig Animal Rights Conference will take place at the Ostwache Leipzig on the weekend of May 22–23, 2027. The conference is being organized by a team of volunteers from Leipzig’s vegan and animal rights groups.\n\n **This page will be updated gradually with exciting new information.**"
+        },
+        {
+          "heading": "The Topics",
+          "text": "This year, numerous speakers will engage critically with different perspectives on animal liberation and animal rights work. Talks will cover animal ethics, animal law, animal rescue from crisis regions, leaving animal farming, anti-speciesist educational work, and other exciting topics. Panel discussions on campaigns and civil disobedience are also planned."
+        },
+        {
+          "heading": "The Goal",
+          "text": "Alongside the talks, the congress will also offer time for informal exchange and follow-up discussions with the speakers. Its goal is to connect the animal rights movement and interested people, and to discuss shared challenges of activist practice."
+        },
+        {
+          "heading": "The Venue",
+          "text": "The Ostwache is the former Ost fire station in Anger-Crottendorf – a listed site of around 3,800 square metres being developed into an open neighbourhood centre by an association since 2017. Alongside a large event space for up to 100 people in the former vehicle hall, there's a courtyard with an urban garden. Accessibility is one of the central goals of the ongoing renovation."
+        },
+        {
+          "heading": "Get Involved",
+          "text": "The congress relies on people who pitch in – with setup and teardown, at the entrance, with awareness, technical support, or translation. Whether for a few hours or the whole day: if you'd like to help out, just send us an email."
+        }
       ],
       "overview": {
         "title": "Talks",
@@ -125,103 +147,198 @@
         {
           "day": "samstag",
           "badge": "Opening",
-          "imageAlt": "Animal Rights Congress Introduction ",
-          "name": "Animal Rights Congress Introduction ",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "10:00"
         },
         {
           "day": "samstag",
-          "imageAlt": "Faba Concepts",
-          "name": "Faba Concepts",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "10:30",
-          "topic": "Schlachtindustrie.de - A data-tool for the movement"
+          "topic": "tba"
         },
         {
           "day": "samstag",
-          "name": "Liberation Education",
+          "name": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
           "session": "11:30",
-          "topic": "Animal Liberation and Anti-Discrimination"
+          "topic": "tba"
         },
         {
           "day": "samstag",
-          "imageAlt": "Daniel Hausmann",
-          "name": "Daniel Hausmann",
+          "name": "Lunch",
+          "session": "12:00",
+          "topic": "From 12pm there'll be delicious Küfa (community kitchen) on a donation basis",
+          "image": "/images/hero/speakers/mittag.jpg",
+          "imageAlt": "Küfa Lunch",
+          "compact": true
+        },
+        {
+          "day": "samstag",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "12:15",
-          "topic": "Biocyclic vegan agriculture"
+          "topic": "tba"
         },
         {
           "day": "samstag",
-          "imageAlt": "Marie Kolb and Josephine Götze",
-          "name": "Marie Kolb & Josephine Götze",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "13:00",
-          "topic": "Why animal welfare is not enough, a call for animal rights"
+          "topic": "tba"
         },
         {
           "day": "samstag",
-          "imageAlt": "Friederike Schmitz",
-          "name": "Friederike Schmitz",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "14:30",
-          "topic": "Animal Rights in times of crisis"
+          "topic": "tba"
         },
         {
           "day": "samstag",
-          "imageAlt": "Tiphaine Lagarde",
-          "name": "Tiphaine Lagarde",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "16:00",
-          "topic": "Toward a Confrontational Anti-Speciesist Practice: The Use of Direct Action at 269 Libération Animale (German, English, French)"
+          "topic": "tba"
         },
         {
           "day": "samstag",
           "badge": "Panel",
-          "imageAlt": "Input and Discussion on Campaigns",
-          "name": "Input and Discussion on Campaigns",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "17:30",
-          "topic": "Featuring input from PETA and FEF Campaigns (German, English)"
+          "topic": "tba"
+        },
+        {
+          "day": "samstag",
+          "name": "Dinner",
+          "session": "18:00",
+          "topic": "From 6pm there'll be delicious Küfa (community kitchen) on a donation basis",
+          "image": "/images/hero/speakers/abendessen.jpeg",
+          "imageAlt": "Küfa Dinner",
+          "compact": true
         },
         {
           "day": "sonntag",
-          "imageAlt": "Notpfote",
-          "name": "Notpfote",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "10:00",
-          "topic": "Animal rescue from areas in crisis"
+          "topic": "tba"
         },
         {
           "day": "sonntag",
-          "imageAlt": "Umweltbildungswerk",
-          "name": "Umwelt&shy;bildungs&shy;werk",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "11:30",
-          "topic": "How the animal-industry destroys our planet"
+          "topic": "tba"
         },
         {
-          "name": "Umwelt&shy;bildungs&shy;werk",
+          "day": "sonntag",
+          "name": "Lunch",
+          "session": "12:00",
+          "topic": "From 12pm there'll be delicious Küfa (community kitchen) on a donation basis",
+          "image": "/images/hero/speakers/mittag.jpg",
+          "imageAlt": "Küfa Lunch",
+          "compact": true
+        },
+        {
+          "name": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
           "session": "12:15",
-          "topic": "Animal-Ethics workshops at schools"
+          "topic": "tba"
         },
         {
           "day": "sonntag",
-          "imageAlt": "Friedrich Mülln",
-          "name": "Friedrich Mülln",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "13:00",
-          "topic": "Resilience and perseverance in activism & successful campaigning"
+          "topic": "tba"
         },
         {
           "day": "sonntag",
+
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "14:30",
-          "topic": "Wildlife Hunting on the Rise, Opposition on the Sidelines The growing influence of organized hunting interests in Germany and international momentum from the animal rights movement"
+          "topic": "tba"
         },
         {
           "day": "sonntag",
-          "imageAlt": "Anna Schubert and Hendrik Hassel",
-          "name": "Anna Schubert and Hendrik Hassel",
+          "imageAlt": "tba",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "16:00",
-          "topic": "Breaking the law in the public interest (German, English)"
+          "topic": "tba"
         },
         {
           "day": "sonntag",
           "badge": "Panel",
-          "name": "Panel Discussion on Civil Disobedience",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "name": "tba",
           "session": "17:30",
-          "topic": "Featuring Gemeinsam gegen die Tierindustrie, Kollektiv Tierbefreiung, Neue Generation and others (German, English)"
+          "topic": "tba"
+        }
+      ],
+      "workshopsTitle": "Workshops",
+      "workshops": [
+        {
+          "day": "samstag",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "imageAlt": "tba",
+          "name": "tba",
+          "session": "00:00 Uhr",
+          "topic": "tba"
+        },
+        {
+          "day": "samstag",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "imageAlt": "tba",
+          "name": "tba",
+          "session": "00:00 Uhr",
+          "topic": "tba"
+        },
+        {
+          "day": "samstag",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "imageAlt": "tba",
+          "name": "tba",
+          "session": "00:00 Uhr",
+          "topic": "tba"
+        },
+        {
+          "day": "sonntag",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "imageAlt": "tba",
+          "name": "tba",
+          "session": "00:00 Uhr",
+          "topic": "tba"
+        },
+        {
+          "day": "sonntag",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "imageAlt": "tba",
+          "name": "tba",
+          "session": "00:00 Uhr",
+          "topic": "tba"
+        },
+        {
+          "day": "sonntag",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "imageAlt": "tba",
+          "name": "tba",
+          "session": "00:00 Uhr",
+          "topic": "tba"
         }
       ],
       "framework": {
@@ -252,10 +369,80 @@
         ]
       },
       "about": {
-        "title": "About us",
-        "mission": ["Mission text goes here later."],
+        "title": "Über uns",
+        "mission": [
+          "The Leipzig Animal Rights Congress brings together people who advocate for animal rights and animal liberation or who would like to learn more about these issues.",
+          "It is organized on a volunteer basis by a team from Leipzig’s animal rights community.",
+          "We aim to create a space for substantive and critical discussion about the work toward animal liberation—ranging from animal ethics and animal rights to various forms of activism and anti-speciesist educational work. The congress is designed to foster networking, facilitate exchange, and highlight the shared challenges of activist practice."
+        ],
+
         "team": [
-          { "name": "Example Person", "role": "Organizing Team", "image": "", "imageAlt": "" }
+          {
+            "name": "Aira",
+            "role": "TRK-Orga, Workshops, Social Media",
+            "image": "/images/hero/speakers/aira.jpg",
+            "imageAlt": "Aira",
+            "quote": "A just world does not arise from obedience, but from solidarity with all people and all nonhuman animals. We must not imagine the world as it is, but as it could be: free from exploitation, oppression, and violence. Another world is not only necessary—it is possible."
+          },
+          {
+            "name": "Almut",
+            "role": "TRK-Orga, Village",
+            "image": "/images/hero/speakers/almut.jpg",
+            "imageAlt": "Almut",
+            "quotes": [
+              {
+                "text": "Love for people and love for animals have as much in common as personal peace and political peace",
+                "source": "Franz Alt, 1938"
+              },
+              {
+                "text": "Nothing in the world is as powerful as an idea whose time has come",
+                "source": "Victor Hugo"
+              }
+            ]
+          },
+          {
+            "name": "Arwie",
+            "role": "TRK-Orga, Workshops",
+            "image": "/images/hero/speakers/arwie.jpg",
+            "imageAlt": "Arwie",
+            "quote": "We are neither completely free nor completely powerless. In between lies the struggle of striving, and that is exactly where it’s worth starting."
+          },
+          {
+            "name": "Chris",
+            "role": "TRK-Orga, Speakers",
+            "image": "/images/hero/speakers/strichperson.jpeg",
+            "imageAlt": "Chris"
+          },
+          {
+            "name": "Momo",
+            "role": "TRK-Orga, Speakers, Website, Social Media",
+            "image": "/images/hero/speakers/momo.jpg",
+            "imageAlt": "Momo",
+            "quote": "People should stop thinking of themselves as particularly valuable. Then all living beings would be better off.\n Once you realize what we're doing to our environment and other living beings, you, too, will love animals more than people."
+          },
+          {
+            "name": "Richard",
+            "role": "TRK-Orga, Finanzen & Presse",
+            "image": "/images/hero/speakers/richard.jpg",
+            "imageAlt": "Richard",
+            "quotes": [
+              {
+                "text": "the creatures outside looked from pig to man, and from man to pig, and from pig to man again; but already it was impossible to say which was which",
+                "source": "George Orwell"
+              },
+              {
+                "text": "may we be forgiven",
+                "source": "Robert Southey"
+              }
+            ]
+          },
+
+          {
+            "name": "Vi",
+            "role": "Role",
+            "image": "/images/hero/speakers/strichperson.jpeg",
+            "imageAlt": "Vi"
+          }
         ]
       },
       "faq": {
@@ -318,6 +505,7 @@
         ]
       },
       "exclusion": {
+        "pageTitle": "Code of Conduct",
         "title": "Exclusion clause",
         "paragraphs": [
           "As organisers, we reserve the right to exclude individuals from the event and deny them entry if they promote nationalist, sexist, ableist, racist, homo-, inter- or transphobic positions, spread conspiracy ideologies or cross-front narratives, or can be associated with far-right parties, organisations or structures. This also applies to individuals who have previously attracted attention through antisemitic, racist, nationalist or other misanthropic statements."
@@ -337,8 +525,7 @@
           "Gregor-Fuchs-Straße 45-47\n04318 Leipzig\n",
           "Email: kontakt [at] ostwache [punkt] org\n",
           "Responsible for content in accordance with Section 18(2) of the Media Services State Treaty",
-          "Marie Böhme\nLutherstr. 15\n04315 Leipzig\n",
-          "Placeholder dog photos via https://placedog.net/"
+          "Marie Böhme\nLutherstr. 15\n04315 Leipzig\n"
         ]
       }
     },

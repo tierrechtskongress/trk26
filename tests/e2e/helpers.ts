@@ -9,16 +9,28 @@ export const localizedPages = [
   {
     locale: "de",
     path: "/",
-    expectedTitle: "Tierrechtskongress Leipzig 2026 | Tierrechtskongress Leipzig"
+    expectedTitle: "Tierrechtskongress Leipzig 2027 | Tierrechtskongress Leipzig"
   },
   {
     locale: "en",
     path: "/en/",
-    expectedTitle: "Leipzig Animal Rights Congress 2026 | Leipzig Animal Rights Congress"
+    expectedTitle: "Leipzig Animal Rights Congress 2027 | Leipzig Animal Rights Congress"
   }
 ] as const;
 
-export const anchorIds = ["spenden", "programm", "rahmenprogramm", "fragen"] as const;
+export const navPages = {
+  de: ["/programm/", "/village/", "/workshops/", "/about/", "/code-of-conduct/", "/faq/", "/impressum/"],
+  en: [
+    "/en/programm/",
+    "/en/village/",
+    "/en/workshops/",
+    "/en/about/",
+    "/en/code-of-conduct/",
+    "/en/faq/",
+    "/en/impressum/"
+  ]
+} as const;
+
 export const assetResourceTypes = new Set(["stylesheet", "script", "image", "font"]);
 const transientExternalFailureStatuses = new Set([408, 425, 429, 500, 502, 503, 504]);
 

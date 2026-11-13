@@ -4,7 +4,7 @@
   --paper-strong: #ffe8d6;
   --paper-muted: #ffe8d6;
   --ink: #502a02;
-  --ink-soft: #6F4E37;
+  --ink-soft: #6f4e37;
   --ink-muted: #8a8a8a;
   --rust: #502a02;
   --rust-soft: #ff9b9b;
@@ -324,9 +324,7 @@ summary,
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(246, 247, 251, 0.5), rgba(246, 247, 251, 0.86)),
-    linear-gradient(135deg, rgba(133, 150, 255, 0.18), rgba(63, 92, 255, 0.08));
+  background: none;
 }
 
 .hero-media img {
@@ -334,7 +332,7 @@ summary,
   height: 100%;
   object-fit: cover;
   object-position: center 34%;
-  filter: grayscale(0.18) contrast(1.02) saturate(0.55) brightness(1.08) sepia(0.08) hue-rotate(180deg);
+  filter: none;
 }
 
 .hero-overlay {
@@ -601,7 +599,9 @@ summary,
   background: var(--paper-strong);
   box-shadow: var(--shadow-soft);
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .speaker-card:hover {
@@ -1359,7 +1359,7 @@ details,
   z-index: 1;
 }
 
-.scrolly-step-card h3 {
+.scrolly-step-card h2 {
   margin: 0 0 0.8rem;
   color: var(--rust);
   font-size: 1.9rem;
@@ -1390,7 +1390,7 @@ details,
   flex-direction: column;
   z-index: 0;
   border-radius: 20px;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .scrolly-bg-image {
@@ -1430,4 +1430,147 @@ details,
   top: 0.75rem;
   left: 0.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.speaker-card--compact .speaker-image {
+  aspect-ratio: 4 / 0.9 !important;
+  max-height: 12rem;
+}
+
+.speaker-card--compact .speaker-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: min(100%, var(--content-width));
+  margin: 2rem auto 0;
+}
+
+.about-team-member {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: 0 0 auto;
+  margin-right: 0.5rem;
+  border-radius: 999px;
+  background: var(--rust);
+  color: #fff;
+  text-decoration: none;
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.home-link:hover,
+.home-link:focus-visible {
+  background: var(--olive);
+  transform: translateY(-1px);
+}
+.speaker-header {
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.speaker-avatar {
+  flex: 0 0 auto;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--line-strong);
+}
+
+.speaker-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 769px) {
+  .site-nav-shell {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 1.5rem !important;
+    gap: 1rem !important;
+  }
+
+  .hero-jumpnav {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    gap: 0.4rem !important;
+    overflow-x: auto !important;
+    scrollbar-width: none;
+  }
+
+  .hero-jumpnav a {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.08em !important;
+    padding: 0.2rem 0.55rem !important;
+  }
+
+  .nav-meta {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+  }
+}
+.speaker-quote .speaker-quote-source {
+  display: block !important;
+  margin-top: 0.3rem !important;
+  font-style: normal !important;
+  font-size: 0.85rem !important;
+  color: var(--ink-soft) !important;
+}
+
+.speaker-quote .speaker-quote-source::before {
+  content: "– ";
+}
+#code-of-conduct .sidebar-note {
+  width: min(90%, 60rem);
+  margin: 3rem auto;
+  padding: 2.4rem 3.2rem;
+  border-radius: 20px;
+}
+
+#code-of-conduct .sidebar-note h3 {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+#code-of-conduct .sidebar-note p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  #code-of-conduct .sidebar-note {
+    width: 100%;
+    padding: 1.6rem 1.4rem;
+  }
+}
+.scrolly-text p {
+  margin: 0;
+}
+
+.scrolly-text p + p {
+  margin-top: 1.2rem;
+}
+
+.scrolly-text strong {
+  font-weight: 700;
 }

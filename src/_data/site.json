@@ -1,8 +1,8 @@
 {
-  "title": "Tierrechtskongress Leipzig 2026",
-  "displayTitle": "Tierrechts&shy;kongress Leipzig 2026",
+  "title": "Tierrechtskongress Leipzig 2027",
+  "displayTitle": "Tierrechts&shy;kongress Leipzig 2027",
   "siteName": "Tierrechtskongress Leipzig",
-  "url_mainfill": "/images/hero/header.png",
+  "url_mainfill": "/images/hero/header.jpg",
   "bodyClass": "",
   "hero": {
     "imageAltSuffix": "Headerbild"
@@ -11,7 +11,7 @@
     "ariaLabel": "Sprungnavigation",
     "items": [
       {
-        "href": "#spenden",
+        "href": "/#spenden",
         "ariaLabel": "Spendenaufruf",
         "icon": "coins",
         "label": "Spendenaufruf",
@@ -32,6 +32,13 @@
         "shortLabel": "Extra"
       },
       {
+        "href": "/workshops/",
+        "ariaLabel": "Workshops",
+        "icon": "chalkboard",
+        "label": "Workshops",
+        "shortLabel": "Workshops"
+      },
+      {
         "href": "/about/",
         "ariaLabel": "Über uns",
         "icon": "users",
@@ -40,21 +47,21 @@
       },
       {
         "href": "/code-of-conduct/",
-        "ariaLabel": "Zum Code of Conduct",
+        "ariaLabel": "Code of Conduct",
         "icon": "scale-balanced",
         "label": "Code of Conduct",
         "shortLabel": "CoC"
       },
       {
         "href": "/faq/",
-        "ariaLabel": "Fragen und Antworten",
+        "ariaLabel": "FAQ",
         "icon": "question-circle",
-        "label": "Fragen & Antworten",
+        "label": "FAQ",
         "shortLabel": "FAQ"
       },
       {
         "href": "/impressum/",
-        "ariaLabel": "Zum Impressum",
+        "ariaLabel": "Impressum",
         "icon": "circle-info",
         "label": "Impressum",
         "shortLabel": "Impr."
@@ -71,14 +78,14 @@
   "congress": {
     "donate": {
       "title": "Unterstütze uns",
-      "text": "Mit deiner Spende hilfst du dabei, Räume, Technik, Materialien und das Rahmenprogramm für den Kongress zu finanzieren.",
+      "text": "Mit deiner Spende hilfst du dabei, Räume, Technik, Materialien und das Rahmenprogramm für den Kongress zu finanzieren.\n !!Spenden sind online leider momentan noch nicht möglich!!",
       "ctaLabel": "Zum Spendenaufruf",
-      "href": "https://spenden.twingle.de/transformation-fordern-e-v/tierrechtskongress/tw6983028ce7f5e/page"
+      "href": ""
     },
     "quickFacts": [
       {
         "label": "Zeit",
-        "value": "23.-24.05.2026 10-19 Uhr"
+        "value": "22.-23.05.2027 10-19 Uhr"
       },
       {
         "label": "Ort",
@@ -95,18 +102,33 @@
     ],
     "intro": {
       "paragraphs": [
-        "Am Wochenende vom 23. bis 24. Mai 2026 findet in der Ostwache Leipzig der Tierrechtskongress Leipzig statt. Anders als 2021 und 2023 wird die Veranstaltung diesmal nicht mehr von vegan-in-leipzig organisiert, sondern von einem Team aus Freiwilligen der Leipziger veganen und Tierrechtsgruppen.",
+        "Am Wochenende vom 22. bis 23. Mai 2027 findet in der Ostwache Leipzig der Tierrechtskongress Leipzig statt. Veranstaltet wird der Kongress von einem Team aus Freiwilligen der Leipziger veganen und Tierrechtsgruppen.\n\n **Die Seite wird nach und nach mit spannenden neuen Infos gefüllt.**",
         "Im diesjährigen Kongress setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Perspektiven der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierethik, Tierrecht, Tierrettung aus Krisengebieten, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben. Darüber hinaus sind Podiumsdiskussionen zu Aktionsformen wie Kampagnen und zivilem Ungehorsam geplant.",
         "Neben den Vorträgen wird der Kongress auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent*innen bieten. Ziel des Kongresses ist es, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren."
       ]
     },
     "introScrolly": [
-  { "heading": "Der Kongress", "text": "Am Wochenende vom 23. bis 24. Mai 2026 findet in der Ostwache Leipzig der Tierrechtskongress Leipzig statt. Anders als 2021 und 2023 wird die Veranstaltung diesmal nicht mehr von vegan-in-leipzig organisiert, sondern von einem Team aus Freiwilligen der Leipziger veganen und Tierrechtsgruppen." },
-  { "heading": "Die Themen", "text": "Im diesjährigen Kongress setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Perspektiven der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierethik, Tierrecht, Tierrettung aus Krisengebieten, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben. Darüber hinaus sind Podiumsdiskussionen zu Aktionsformen wie Kampagnen und zivilem Ungehorsam geplant." },
-  { "heading": "Das Ziel", "text": "Neben den Vorträgen wird der Kongress auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent*innen bieten. Ziel des Kongresses ist es, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren." },
-  { "heading": "Der Ort", "text": "Die Ostwache ist die ehemalige Feuerwache Ost in Anger-Crottendorf – ein denkmalgeschütztes Gelände von rund 3.800 Quadratmetern, das seit 2017 von einem Verein zu einem offenen Nachbarschaftszentrum entwickelt wird. Neben dem großen Veranstaltungsraum für bis zu 100 Personen in der ehemaligen Fahrzeughalle gibt es einen Hof mit urbanem Garten. Barrierefreiheit ist eines der zentralen Ziele der laufenden Sanierung." },
-  { "heading": "Mach mit", "text": "Der Kongress lebt von Menschen, die mit anpacken – beim Auf- und Abbau, am Einlass, bei Awareness, Technik oder Übersetzung. Egal ob für ein paar Stunden oder den ganzen Tag: Wenn du Lust hast mitzuhelfen, schreib uns einfach eine E-Mail." }
-],
+      {
+        "heading": "Der Kongress",
+        "text": "Am Wochenende vom 22. bis 23. Mai 2027 findet in der Ostwache Leipzig der Tierrechtskongress Leipzig statt. Veranstaltet wird der Kongress von einem Team aus Freiwilligen der Leipziger veganen und Tierrechtsgruppen.\n\n **Die Seite wird nach und nach mit spannenden neuen Infos gefüllt.**"
+      },
+      {
+        "heading": "Die Themen",
+        "text": "Im diesjährigen Kongress setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Perspektiven der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierethik, Tierrecht, Tierrettung aus Krisengebieten, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben. Darüber hinaus sind Podiumsdiskussionen zu Aktionsformen wie Kampagnen und zivilem Ungehorsam geplant."
+      },
+      {
+        "heading": "Das Ziel",
+        "text": "Neben den Vorträgen wird der Kongress auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent*innen bieten. Ziel des Kongresses ist es, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren."
+      },
+      {
+        "heading": "Der Ort",
+        "text": "Die Ostwache ist die ehemalige Feuerwache Ost in Anger-Crottendorf – ein denkmalgeschütztes Gelände von rund 3.800 Quadratmetern, das seit 2017 von einem Verein zu einem offenen Nachbarschaftszentrum entwickelt wird. Neben dem großen Veranstaltungsraum für bis zu 100 Personen in der ehemaligen Fahrzeughalle gibt es einen Hof mit urbanem Garten. Barrierefreiheit ist eines der zentralen Ziele der laufenden Sanierung."
+      },
+      {
+        "heading": "Mach mit",
+        "text": "Der Kongress lebt von Menschen, die mit anpacken – beim Auf- und Abbau, am Einlass, bei Awareness, Technik oder Übersetzung. Egal ob für ein paar Stunden oder den ganzen Tag: Wenn du Lust hast mitzuhelfen, schreib uns einfach eine E-Mail."
+      }
+    ],
     "overview": {
       "title": "Vorträge",
       "days": [
@@ -121,149 +143,211 @@
       ]
     },
     "speakers": [
-  {
-    "day": "samstag",
-    "badge": "Eröffnung",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Intro TRK Team",
-    "name": "Intro TRK Team",
-    "session": "10:00 Uhr"
-  },
-  {
-    "day": "samstag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Faba Konzepte",
-    "name": "Faba Konzepte",
-    "session": "10:30",
-    "topic": "Schlachtindustrie.de - Ein Datenwerkzeug für die Bewegung"
-  },
-  {
-    "day": "samstag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Liberation Education",
-    "name": "Liberation Education",
-    "session": "11:30 Uhr",
-    "topic": "Tierbefreiuung und Antidiskriminierung"
-  },
-  {
-    "day": "samstag",
-    "name": "Mittagessen",
-    "session": "12:00",
-    "topic": "Ab 12 Uhr gib es leckere Küfa (Küche für alle) auf Spendenbasis"
-  },
-  {
-    "day": "samstag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Daniel Hausmann",
-    "name": "Daniel Hausmann",
-    "session": "12:15 Uhr",
-    "topic": "Biozyklisch-vegane Landwirtschaft"
-  },
-  {
-    "day": "samstag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Marie Kolb & Josephine Götze",
-    "name": "Marie Kolb & Josephine Götze",
-    "session": "13:00 Uhr",
-    "topic": "Warum Tierschutz nicht ausreicht, ein Appell für Tierrechte"
-  },
-  {
-    "day": "samstag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Friederike Schmitz",
-    "name": "Friederike Schmitz",
-    "session": "14:30 Uhr",
-    "topic": "Tierrechte in Krisenzeiten"
-  },
-  {
-    "day": "samstag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Tiphaine Lagarde",
-    "name": "Tiphaine Lagarde",
-    "session": "16:00 Uhr",
-    "topic": "Für eine konfrontative antispeziesistische Praxis: Der Einsatz direkter Aktionen bei 269 Libération Animale (Deutsch, Englisch, Französisch) "
-  },
-  {
-    "day": "samstag",
-    "badge": "Podium",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Input und Diskussion zu Kampagnen",
-    "name": "Input und Diskussion zu Kampagnen",
-    "session": "17:30 Uhr",
-    "topic": "mit Input von PETA und FEF Campaigns (Deutsch, Englisch)"
-  },
-  {
-    "name": "Abendessen",
-    "session": "18:00",
-    "topic": "Ab 18 Uhr gibt es leckere Küfa (Küche für alle) auf Spendenbasis"
-  },
-  {
-    "day": "sonntag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Notpfote",
-    "name": "Notpfote",
-    "session": "10:00 Uhr",
-    "topic": "Tierrettung aus Krisengebieten"
-  },
-  {
-    "day": "sonntag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Umweltbildungswerk",
-    "name": "Umwelt&shy;bildungs&shy;werk",
-    "session": "11:30 Uhr",
-    "topic": "Wie die Tierindustrie unseren Planeten zerstört"
-  },
-  {
-    "day": "sonntag",
-    "name": "Mittagessen",
-    "session": "12:00",
-    "topic": "Ab 12 Uhr gibt es leckere Küfa (Küche für alle) auf Spendenbasis"
-  },
-  {
-    "day": "sonntag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Umweltbildungswerk",
-    "name": "Umwelt&shy;bildungs&shy;werk",
-    "session": "12:15",
-    "topic": "Tierethik-Workshops an Schulen"
-  },
-  {
-    "day": "sonntag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Friedrich Mülln",
-    "name": "Friedrich Mülln",
-    "session": "13:00 Uhr",
-    "topic": "Resilienz und Beständigkeit im Aktivismus & erfolgreiche Kampagnenarbeit"
-  },
-  {
-    "day": "sonntag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Marie",
-    "name": "Marie",
-    "session": "14:30 Uhr",
-    "topic": "Wildtierjagd im Aufwind, Widerstand im Abseits Der wachsende Einfluss organisierter Jagdinteressen in Deutschland und internationale Impulse aus der Tierrechtsbewegung"
-  },
-  {
-    "day": "sonntag",
-    "image": "/images/hero/speakers/strichperson.jpeg",
-    "imageAlt": "Anna Schubert und Hendrik Hassel",
-    "name": "Anna Schubert und Hendrik Hassel",
-    "session": "16:00 Uhr",
-    "topic": "Rechtsbruch für das öffentliche Interesse (Deutsch, Englisch)"
-  },
-        {
-        "day": "sonntag",
-        "badge": "Podium",
+      {
+        "day": "samstag",
+        "badge": "Opening",
         "image": "/images/hero/speakers/strichperson.jpeg",
-        "imageAlt": "Podiumsdiskussion zu Zivilem Ungehorsam",
-        "name": "Podiumsdiskussion zu Zivilem Ungehorsam",
-        "session": "17:30 Uhr",
-        "topic": "mit Gemeinsam gegen die Tierindustrie, Kollektiv Tierbefreiung Stuttgart, Neue Generation u.a. (Deutsch, Englisch)"
+        "imageAlt": "Tierrechtskongress Leipzig Team",
+        "name": "Tierrechtskongress Leipzig Team",
+        "session": "10:00",
+        "quote": "Gemeinsam sind wir lauter als jede einzelne Stimme."
+      },
+      {
+        "day": "samstag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "10:30",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "11:30",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "name": "Lunch",
+        "session": "12:00",
+        "topic": "Ab 12 Uhr gibt es leckeres Essen aus der Küfa (Küche für alle) gegen eine freiwillige Spende.",
+        "image": "/images/hero/speakers/mittag.jpg",
+        "imageAlt": "Küfa Lunch",
+        "compact": true
+      },
+      {
+        "day": "samstag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "12:15",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "13:00",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "14:30",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "16:00",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "badge": "Panel",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "17:30",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "name": "Dinner",
+        "session": "18:00",
+        "topic": "Ab 18 Uhr gibt es leckeres Essen aus der Küfa (Küche für alle) gegen eine freiwillige Spende.",
+        "image": "/images/hero/speakers/abendessen.jpeg",
+        "imageAlt": "Küfa Dinner",
+        "compact": true
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "10:00",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "11:30",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "name": "Lunch",
+        "session": "12:00",
+        "topic": "Ab 12 Uhr gibt es leckeres Essen aus der Küfa (Küche für alle) gegen eine freiwillige Spende.",
+        "image": "/images/hero/speakers/mittag.jpg",
+        "imageAlt": "Küfa Lunch",
+        "compact": true
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "12:15",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "",
+        "name": "tba",
+        "session": "13:00",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "",
+        "name": "tba",
+        "session": "14:30",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "16:00",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "badge": "Panel",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "17:30",
+        "topic": "tba"
       }
     ],
-      "framework": {
+    "workshopsTitle": "Workshops",
+    "workshops": [
+      {
+        "day": "samstag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "00:00 Uhr",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "00:00 Uhr",
+        "topic": "tba"
+      },
+      {
+        "day": "samstag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "00:00 Uhr",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "00:00 Uhr",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "00:00 Uhr",
+        "topic": "tba"
+      },
+      {
+        "day": "sonntag",
+        "image": "/images/hero/speakers/strichperson.jpeg",
+        "imageAlt": "tba",
+        "name": "tba",
+        "session": "00:00 Uhr",
+        "topic": "tba"
+      }
+    ],
+    "framework": {
+      "introText": "Unser Anspruch ist es, dass Menschen miteinander ins Gespräch kommen und Kontakte knüpfen, um den Tieren besser helfen zu können. Dafür ist unser Village da.",
       "title": "Rahmen&shy;programm",
-      "introText": "Neben den Vorträgen gibt es bei uns noch einiges mehr zu entdecken.",
       "items": [
         {
           "imageAlt": "Village",
@@ -290,9 +374,79 @@
     },
     "about": {
       "title": "Über uns",
-      "mission": ["Hier steht später der Mission-Text."],
+      "mission": [
+        "Der Tierrechtskongress Leipzig bringt Menschen zusammen, die sich für Tierrechte und Tierbefreiung einsetzen oder mehr darüber erfahren möchten.",
+        "Organisiert wird er ehrenamtlich von einem Team aus Freiwilligen der Leipziger Tierrechtsszene.",
+        "Wir wollen Raum für eine inhaltliche und kritische Auseinandersetzung mit der Arbeit für Tierbefreiung schaffen. Von Tierethik und Tierrecht über verschiedene Aktionsformen bis zu antispeziesistischer Bildungsarbeit. Der Kongress soll vernetzen, Austausch ermöglichen und gemeinsame Herausforderungen aktivistischer Praxis sichtbar machen."
+      ],
+
       "team": [
-        { "name": "Beispiel Person", "role": "Orga-Team", "image": "", "imageAlt": "" }
+        {
+          "name": "Aira",
+          "role": "TRK-Orga, Workshops, Social Media",
+          "image": "/images/hero/speakers/aira.jpg",
+          "imageAlt": "Aira",
+          "quote": "Eine gerechte Welt entsteht nicht aus Gehorsam, sondern aus Solidarität mit allen Menschen und allen nichtmenschlichen Tieren. Wir müssen uns die Welt nicht so vorstellen, wie sie ist, sondern so, wie sie sein könnte: frei von Ausbeutung, Unterdrückung und Gewalt. Eine andere Welt ist nicht nur nötig. Sie ist möglich."
+        },
+        {
+          "name": "Almut",
+          "role": "TRK-Orga, Village",
+          "image": "/images/hero/speakers/almut.jpg",
+          "imageAlt": "Almut",
+          "quotes": [
+            {
+              "text": "Menschenliebe und Tierliebe haben soviel miteinander zu tun wie persönlicher und politischer Frieden",
+              "source": "Franz Alt, 1938"
+            },
+            {
+              "text": "Nichts auf der Welt ist so mächtig wie eine Idee, deren Zeit gekommen ist",
+              "source": "Victor Hugo"
+            }
+          ]
+        },
+        {
+          "name": "Arwie",
+          "role": "TRK-Orga, Workshops",
+          "image": "/images/hero/speakers/arwie.jpg",
+          "imageAlt": "Arwie",
+          "quote": "Wir sind weder völlig frei noch völlig machtlos. Dazwischen liegt die Mühe des Strebens, und genau da lohnt es sich anzufangen."
+        },
+        {
+          "name": "Chris",
+          "role": "TRK-Orga, Sprecher*innen",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "imageAlt": "Chris"
+        },
+        {
+          "name": "Momo",
+          "role": "TRK-Orga, Sprecher*innen, Webseite",
+          "image": "/images/hero/speakers/momo.jpg",
+          "imageAlt": "Momo",
+          "quote": "Die Menschen sollten aufhören, sich für besonders wertvoll zu halten. Dann würde es allen Lebewesen besser gehen. Wenn du dir einmal bewusst wirst, was wir unserer Umwelt und anderen Lebewesen antun, wirst auch du die Tiere mehr lieben als die Menschen."
+        },
+        {
+          "name": "Richard",
+          "role": "TRK-Orga, Finanzen & Presse",
+          "image": "/images/hero/speakers/richard.jpg",
+          "imageAlt": "Richard",
+          "quotes": [
+            {
+              "text": "the creatures outside looked from pig to man, and from man to pig, and from pig to man again; but already it was impossible to say which was which",
+              "source": "George Orwell"
+            },
+            {
+              "text": "may we be forgiven",
+              "source": "Robert Southey"
+            }
+          ]
+        },
+
+        {
+          "name": "Vi",
+          "role": "Rolle",
+          "image": "/images/hero/speakers/strichperson.jpeg",
+          "imageAlt": "Vi"
+        }
       ]
     },
     "faq": {
@@ -355,6 +509,7 @@
       ]
     },
     "exclusion": {
+      "pageTitle": "Code of Conduct",
       "title": "Ausschlussklausel",
       "paragraphs": [
         "Als Veranstalter*innen behalten wir uns vor, Personen von der Veranstaltung auszuschließen und ihnen den Zutritt zu verwehren, wenn sie nationalistische, sexistische, ableistische, rassistische, homo-, inter- oder transfeindliche Positionen vertreten, Verschwörungsideologien oder Querfront-Inhalte verbreiten oder rechtsextremen Parteien, Organisationen oder Strukturen zuzuordnen sind. Das gilt auch für Personen, die bereits durch antisemitische, rassistische, nationalistische oder andere menschenverachtende Äußerungen aufgefallen sind.\n"
@@ -374,8 +529,7 @@
         "Gregor-Fuchs-Straße 45-47\n04318 Leipzig\n",
         "E-Mail: kontakt [at] ostwache [punkt] org\n",
         "Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV",
-        "Marie Böhme\nLutherstr. 15\n04315 Leipzig\n",
-        "Platzhalter Hundefotos via https://placedog.net/"
+        "Marie Böhme\nLutherstr. 15\n04315 Leipzig\n"
       ]
     }
   },

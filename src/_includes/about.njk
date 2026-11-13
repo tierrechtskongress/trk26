@@ -1,18 +1,20 @@
 ---
 layout: layouts/base.njk
 ---
-{% from 'components/congress-macros.njk' import sectionBanner, teamMember %}
+{% from 'components/congress-macros.njk' import sectionBanner, aboutTeamMember %}
 <div class="page-shell">
 <div id="about" class="anchor-section">
 {{ sectionBanner(site.congress.about.title) }}
 
+<div class="scrolly-step-card">
 {% for paragraph in site.congress.about.mission %}
 <p>{{ paragraph | cmsBlock | safe }}</p>
 {% endfor %}
+</div>
 
-<div class="team-column">
+<div class="about-team-grid">
 {% for member in site.congress.about.team %}
-{{ teamMember(member, site.ui) }}
+{{ aboutTeamMember(member, site.ui) }}
 {% endfor %}
 </div>
 </div>

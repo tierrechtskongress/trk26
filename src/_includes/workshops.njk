@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+{% from 'components/congress-macros.njk' import sectionBanner, speakerCard %}
+<div class="page-shell">
+<div id="workshops" class="anchor-section">
+{{ sectionBanner(site.congress.workshopsTitle) }}
+
+<div class="program-days-grid">
+{% for day in site.congress.overview.days %}
+<section class="program-day">
+    <h3>{{ day.label | cmsInline | safe }}</h3>
+    {% for workshop in site.congress.workshops %}
+    {% if workshop.day == day.key %}
+    {{ speakerCard(workshop, site.ui) }}
+    {% endif %}
+    {% endfor %}
+</section>
+{% endfor %}
+</div>
+</div>
+</div>

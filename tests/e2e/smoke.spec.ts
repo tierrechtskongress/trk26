@@ -1,12 +1,12 @@
 import { expect, test } from "@playwright/test";
 
 import {
-  anchorIds,
   createPageIssueCollector,
   expectNoHorizontalOverflow,
   expectNoRuntimeErrors,
   gotoAndWaitForPage,
-  localizedPages
+  localizedPages,
+  navPages
 } from "./helpers";
 
 for (const localizedPage of localizedPages) {
@@ -23,11 +23,10 @@ for (const localizedPage of localizedPages) {
       await expect(page.locator("main#main")).toBeVisible();
       await expect(page.locator(".language-switcher")).toBeVisible();
 
-      for (const anchorId of anchorIds) {
-        await expect(page.locator(`#${anchorId}`), `Expected #${anchorId} to exist.`).toHaveCount(1);
+      for (const path of navPages[localizedPage.locale]) {
         await expect(
-          page.locator(`.site-sticky-nav .hero-jumpnav a[href="#${anchorId}"]`),
-          `Expected jump nav link for #${anchorId}.`
+          page.locator(`.site-sticky-nav .hero-jumpnav a[href="${path}"]`),
+          `Expected nav link to ${path}.`
         ).toHaveCount(1);
       }
 

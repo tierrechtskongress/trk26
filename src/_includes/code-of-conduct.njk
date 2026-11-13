@@ -1,9 +1,10 @@
 ---
 layout: layouts/base.njk
 ---
-{% from 'components/congress-macros.njk' import noteCard %}
+{% from 'components/congress-macros.njk' import noteCard, sectionBanner %}
 <div class="page-shell">
 <div id="code-of-conduct" class="anchor-section">
+    {{ sectionBanner(site.congress.exclusion.pageTitle) }}
     {{ noteCard(site.congress.exclusion) }}
 </div>
 </div>

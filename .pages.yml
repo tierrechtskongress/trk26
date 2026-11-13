@@ -150,6 +150,14 @@ content:
             type: object
             list: true
             fields:
+              - name: quote
+                label: Zitat
+                type: text
+                required: false
+              - name: compact
+                label: Schmaleres Bild (für Essenspausen)
+                type: boolean
+                required: false
               - name: day
                 label: Day Key
                 type: string
@@ -176,6 +184,44 @@ content:
               - name: topic
                 label: Topic
                 type: string
+              - name: workshops
+            label: Workshops
+            type: object
+            list: true
+            fields:
+              - name: day
+                label: Day Key
+                type: string
+              - name: badge
+                label: Badge
+                type: string
+              - name: image
+                label: Card Image
+                type: image
+                required: false
+              - name: imageAlt
+                label: Image Alt
+                type: string
+              - name: name
+                label: Workshop Titel
+                type: string
+              - name: org
+                label: Organisation
+                type: string
+              - name: session
+                label: Zeit
+                type: string
+              - name: topic
+                label: Beschreibung
+                type: string
+              - name: quote
+                label: Zitat
+                type: text
+                required: false
+              - name: compact
+                label: Schmaleres Bild
+                type: boolean
+                required: false
           - name: framework
             label: Supporting Program
             type: object
@@ -225,6 +271,10 @@ content:
                 type: object
                 list: true
                 fields:
+                  - name: quote
+                    label: Zitat
+                    type: text
+                    required: false
                   - name: name
                     label: Name
                     type: string
@@ -312,7 +362,7 @@ content:
     path: src/en/en.json
     format: json
     fields:
-    - name: site
-      label: Site content
-      type: object
-      fields: *site_fields
+      - name: site
+        label: Site content
+        type: object
+        fields: *site_fields
