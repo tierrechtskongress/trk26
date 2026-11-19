@@ -414,6 +414,12 @@
             "imageAlt": "Chris"
           },
           {
+            "name": "Ivy",
+            "role": "TRK-Orga",
+            "image": "/images/hero/speakers/strichperson.jpeg",
+            "imageAlt": "Ivy"
+          },
+          {
             "name": "Momo",
             "role": "TRK-Orga, Speakers, Website, Social Media",
             "image": "/images/hero/speakers/momo.jpg",
@@ -435,13 +441,6 @@
                 "source": "Robert Southey"
               }
             ]
-          },
-
-          {
-            "name": "Ivy",
-            "role": "TRK-Orga",
-            "image": "/images/hero/speakers/strichperson.jpeg",
-            "imageAlt": "Ivy"
           }
         ]
       },
