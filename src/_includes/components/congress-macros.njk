@@ -72,6 +72,13 @@
         {% if speaker.topic %}
         <p class="speaker-topic"><strong>{{ ui.speakerTopicLabel }}</strong> {{ speaker.topic | cmsInline | safe }}</p>
         {% endif %}
+        {% if speaker.registrationUrl %}
+        <p class="speaker-registration">
+            <a href="{{ speaker.registrationUrl }}">
+                {{ ui.registrationLabel }}<span class="visually-hidden">: {{ speaker.name | cmsInline | safe }}</span>
+            </a>
+        </p>
+        {% endif %}
     </div>
 </div>
 {% endmacro %}

@@ -71,6 +71,7 @@
   "ui": {
     "fallbackImageAlt": "Bild",
     "speakerTopicLabel": "Thema:",
+    "registrationLabel": "Zur Anmeldung",
     "emailLabel": "E-Mail:",
     "emailAriaLabel": "E-Mail-Adresse",
     "emailHint": "Bitte die Adresse zum Schreiben entsprechend zusammensetzen."

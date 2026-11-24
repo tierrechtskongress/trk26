@@ -72,6 +72,7 @@
     "ui": {
       "fallbackImageAlt": "Image",
       "speakerTopicLabel": "Topic:",
+      "registrationLabel": "Register",
       "emailLabel": "Email:",
       "emailAriaLabel": "Email address",
       "emailHint": "Please assemble the address accordingly before sending an email."

@@ -68,6 +68,9 @@ content:
           - name: speakerTopicLabel
             label: Speaker Topic Label
             type: string
+          - name: registrationLabel
+            label: Workshop Registration Button Label
+            type: string
           - name: emailLabel
             label: Email Label
             type: string
@@ -214,6 +217,11 @@ content:
               - name: topic
                 label: Beschreibung
                 type: string
+              - name: registrationUrl
+                label: Anmelde-Link
+                type: string
+                required: false
+                description: Link zum Anmeldeformular (z. B. pretix oder LimeSurvey). Leer lassen, solange es keine Anmeldung gibt – dann wird kein Button angezeigt.
               - name: quote
                 label: Zitat
                 type: text
